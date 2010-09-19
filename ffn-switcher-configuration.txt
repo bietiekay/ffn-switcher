@@ -1,0 +1,56 @@
+﻿Wahr/Falsch Variablen können durch Anhängen von .bool bzw. .!bool dazu gebracht werden statt
+true/false ein on/off zu liefern (bei ! -> off/on)
+
+Settings.Gateway.GatewayName								-	Gateway Name
+Settings.Gateway.Nickname									-	Anzeigename des Gateways im TS
+Settings.Gateway.isActive									-	ist das Gateway aktiv true/false
+Settings.Gateway.WaitForConnectSeconds						-	wieviele Sekunden soll auf Connect gewartet werden
+Settings.Gateway.TSServer1.ServerURL						-	Adresse des 1. Teamspeak Servers
+Settings.Gateway.TSServer1.LoginName						-	Login-Benutzername für 1. Teamspeak Server
+Settings.Gateway.TSServer1.Password							-	Passwort für 1. Teamspeak Server
+Settings.Gateway.TSServer1.ChannelID						-	Kanal Nummer für 1. Teamspeak Server
+Settings.Gateway.TSServer1.ChannelPW						- 	Kanal Passwort für 1. Teamspeak Server
+Settings.Gateway.TSServer1.WhisperBlocked					-	WHISPER Flag einschalten?
+Settings.Gateway.TSServer2.ServerURL						-	siehe oben
+Settings.Gateway.TSServer2.LoginName
+Settings.Gateway.TSServer2.Password
+Settings.Gateway.TSServer2.ChannelID
+Settings.Gateway.TSServer2.ChannelPW
+Settings.Gateway.TSServer2.WhisperBlocked
+Settings.Gateway.UseServer2AfterNumberOfFailedReconnects	-	nach wievielen fehlgeschlagenen Connect Versuchen soll Server 2 benutzt werden?
+Settings.Gateway.Comport									-	COM-Port Name, z.B. "COM1" oder "COM2
+Settings.Gateway.RTS										-	passiert die Steuerung über RTS(true) oder DTR(false)
+Settings.Gateway.DelaySeconds								-	wieviele Sekunden muss ein Durchgang min. lang sein
+Settings.Gateway.DelayAfterSendingMilliSeconds					-	wieviele Millisekunden wird nach dem Durchgang noch auf Nachtasten gewartet
+Settings.Gateway.WatchdogMinutes							-	wie lange darf ein Durchgang maximal sein
+Settings.Gateway.AutoReconnect								-	automatisch wieder verbinden bei Verbindungsverlust? (true/false)
+Settings.Gateway.AutoReconnectSeconds						-	nach wievielen Sekunden Reconnect versuchen
+Settings.Logging.LoggingToFileEnabled						-	Logfile aktiviert (true/false)
+Settings.Logging.LoggingToScreenEnabled						-	Logausgabe auf dem Bildschirm aktiv (true/false)
+Settings.Logging.Logfile									-	Pfad+Dateiname des Logfiles
+Settings.SetupWizardDone									-	ist der Setup-Assistenz schon gelaufen? (true/false)
+Settings.HTTP.TCPPort										-	der TCP Port des Administrations-Webservers
+Settings.HTTP.ListeningIP									-	IP Adresse des Webservers; Standard: 127.0.0.1 (localhost)
+Settings.HTTP.DocumentRoot									-	Verzeichniss des Webservers (Standard: ./www)
+Settings.HTTP.verboseLogging								-	soll der Webserver ausführliche Logausgabe machen (true/false)
+Settings.Beacon.BeaconDirectory								-	Verzeichniss für die Baken-Sounddateien
+Settings.Beacon.GatewayBeaconFile							-	Sounddatei - Bake des Gateways
+Settings.Beacon.ReplayGatewayBeacon							-	Bake erneut spielen
+Settings.Beacon.ReplayGatewayBeaconOnlyWhenActivity			-	Bake nur spielen wenn innerhalb der Replay-Zeit Aktivität auf dem gateway war (true/false)
+Settings.Beacon.GatewayBeaconReplayInMinutes				-	Zeit in Minuten in denen die Bake wiederholt wird
+Settings.Beacon.ConnectFile									-	Sounddatei - wird beim Connect gespielt
+Settings.Beacon.PlayAtConnect								-	Sounddatei beim Connect abspielen (true/false)
+Settings.Beacon.DisconnectFile								-	Sounddatei - wird beim Disconnect gespielt
+Settings.Beacon.PlayAtDisconnect							-	Sounddatei beim Disconnect abspielen (true/false)
+Settings.Beacon.GatewayDisabledFile							-	Sounddatei - wird gespielt wenn das Gateway abgeschaltet/deaktiviert wurde (z.B. in anderen Raum verschoben)
+Settings.Beacon.PlayWhenDisabled							-	Sounddatei beim abschalten/deaktivieren abspielen (true/false)
+Settings.Beacon.RogerBeepFile								-	Sounddatei - wird als Roger-Beep gespielt
+Settings.Beacon.PlayRogerBeep								-	Rogerbeep abspielen (true/false)
+Settings.Beacon.GatewayOfflineFile							-	Sounddatei wird gespielt wenn Gateway Offline geht
+Settings.Beacon.PlayWhenOffline								-	Sounddatei abspielen wenn Gateway Offline (true/false)
+Settings.Beacon.ReplayWhenDisabled							-	Status-Sound erneut abspielen wenn Gateway abgeschaltet
+Settings.Beacon.ReplayTimeInMinutes							-	Anzahl der Minuten die gewartet werden bis Status-Sound erneut abgespielt wird
+Settings.TSClient.TeamSpeakClientURL						-	wird nichtmehr verwendet
+Settings.TSClient.StartTeamspeakClientAtStartup				-	Teamspeak Client starten wenn Switcher startet (true/false)
+Settings.TSClient.RestartTeamspeakClientIfHangDetected		-	Teamspeak Client neustarten wenn erkannt wurde dass er "hängt" (true/false)
+Settings.WaitPenaltyMinutes									-	wieviele Minuten standardmässig warten wenn Gateway auf die "Strafbank" versetzt wurde

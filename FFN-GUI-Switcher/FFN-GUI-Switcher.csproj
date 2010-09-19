@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B1DA8AE-1343-4B16-AED5-657AC98DA989}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FFN_Switcher</RootNamespace>
+    <AssemblyName>FFN-GUI-Switcher</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Switcher.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IPAddressControlLib, Version=1.1.3174.38153, Culture=neutral, PublicKeyToken=55e96405d8fd6d61, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>IPAddressControl\obj\Debug\IPAddressControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HTTP\HTTPProcessor.cs" />
+    <Compile Include="HTTP\HTTPServer.cs" />
+    <Compile Include="HTTP\TemplateProcessor.cs" />
+    <Compile Include="Informationen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informationen.Designer.cs">
+      <DependentUpon>Informationen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logging\ConsoleOutputLogger.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFN-Switcher.cs" />
+    <Compile Include="Processors\BeaconProcessor.cs" />
+    <Compile Include="Processors\ClientFlags.cs" />
+    <Compile Include="Processors\ChannelFlags.cs" />
+    <Compile Include="Processors\SerialportProcessor.cs" />
+    <Compile Include="Processors\TeamspeakProcessor.cs" />
+    <Compile Include="Processors\TSRemote.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Informationen.resx">
+      <DependentUpon>Informationen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveSettings.resx">
+      <DependentUpon>SaveSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step10.resx">
+      <DependentUpon>SetupWizard_Step10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step9.resx">
+      <DependentUpon>SetupWizard_Step9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step8.resx">
+      <DependentUpon>SetupWizard_Step8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step7.resx">
+      <DependentUpon>SetupWizard_Step7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step6.resx">
+      <DependentUpon>SetupWizard_Step6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step5.resx">
+      <DependentUpon>SetupWizard_Step5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step4.resx">
+      <DependentUpon>SetupWizard_Step4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step3.resx">
+      <DependentUpon>SetupWizard_Step3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step2.resx">
+      <DependentUpon>SetupWizard_Step2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupWizard\SetupWizard_Step1.resx">
+      <DependentUpon>SetupWizard_Step1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWizard\UpdateWizard.resx">
+      <DependentUpon>UpdateWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\FFN_Switcher.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Version.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SaveSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveSettings.Designer.cs">
+      <DependentUpon>SaveSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Settings\SettingsProcessor.cs" />
+    <Compile Include="SetupWizard\SetupWizard_Step10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step10.Designer.cs">
+      <DependentUpon>SetupWizard_Step10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step9.Designer.cs">
+      <DependentUpon>SetupWizard_Step9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step8.Designer.cs">
+      <DependentUpon>SetupWizard_Step8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step7.Designer.cs">
+      <DependentUpon>SetupWizard_Step7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step6.Designer.cs">
+      <DependentUpon>SetupWizard_Step6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step5.Designer.cs">
+      <DependentUpon>SetupWizard_Step5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step4.Designer.cs">
+      <DependentUpon>SetupWizard_Step4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step3.Designer.cs">
+      <DependentUpon>SetupWizard_Step3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step2.Designer.cs">
+      <DependentUpon>SetupWizard_Step2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetupWizard\SetupWizard_Step1.Designer.cs">
+      <DependentUpon>SetupWizard_Step1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Switcher.cs" />
+    <Compile Include="UpdateWizard\UpdateWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateWizard\UpdateWizard.Designer.cs">
+      <DependentUpon>UpdateWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Version.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="knownbugs.txt" />
+    <Content Include="ffn-switcher-logo.bmp" />
+    <Content Include="ffn-switcher-logo.jpg" />
+    <Content Include="ffn-switcher-logo_90.bmp" />
+    <Content Include="Switcher.ico" />
+    <Content Include="TSRemote.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="RSS.NET\RSS.NET.csproj">
+      <Project>{C42FC014-7E12-4FAF-9BC9-79BF1529440D}</Project>
+      <Name>RSS.NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

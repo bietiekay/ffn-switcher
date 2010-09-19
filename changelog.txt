@@ -1,0 +1,340 @@
+Revision 106:
++ neue Funktion um Sprechpausen Warnmeldungen in den Channel zu leiten
+
+Revision 105:
+* "Bake wiederholen" Text  in "Bake aktiviert" geändert
+* Fehler gefixt der dazu geführt hat dass eine Bake ununterbrochen wiederholt wurde
+* Voice Schaltung nocheinmal überarbeitet jetzt erfolgt nurnoch eine Deaktiviert/Aktiviert Meldung und sonst keine Änderung im Verhalten des Switchers
+
+Revision 104:
++ added knownbugs.txt
+* changed Serialport shutdown procedure
+* changed window behaviour - you can now resize it and make it smaller
+
+Revision 103:
+* bugfix try for voice 2
+
+Revision 102:
+* bugfix: Update Download failed with null exception
+
+Revision 101:
+* bugfix try for voice
+* bugfix: Beacon Preview did loop endlessly
+* bugfix: Update Download failed with null exception
+
+Revision 100:
++ added Version Check / Update Download
+
+Revision 99:
++ added Teamspeak Lie Detector for Voice Flag Check
++ can now play beacon and send it
+
+Revision 98:
+* minor changes
+
+Revision 97:
++ added play button to beacon config
+
+Revision 96:
++ added ChannelFlags to detect voice status
++ added Voice Status detection to Teamspeak Server
++ added Voice Status monitoring to react when on penalty
++ added automatic scrolling to the status display
++ added Gateway Online Sound when coming back from penalty
+
+Revision 95:
+* fixed RTS/DTR in Wizard and Wizard Help
+
+Revision: 94
+* fixed RTS/DTR serial port text
+* fixed resizable windows
+
+Revision: 93
+* fixed some help text typos
+* default serial cable version is rts
+
+Revision: 92
++ added more help texts
+
+Revision: 91
++ added help texts
+
+Revision: 90
++ added "..." find file for beacon, logfile and teamspeak client to the settings and assistant
+
+Revision: 89
++ added Setup Wizard
++ added Setup
+
+Revision: 88
+* another shutdown fix
++ added Statusoutput Seconds
+
+Revision: 87
+* fixed GUI bug ReconnectSeconds was WatchdogMinutes
+* fixed Sound bug that caused early break of beacons
+
+Revision: 86
+* text fix for web gui
+
+Revision: 85
+* updated version
+
+Revision: 84
+* bugfixed dtr/rts cross
+
+Revision: 83
+- removed app config
+
+Revision: 82
+* fixed another TeamspeakProcessor shutdown bug
+
+Revision: 81
+* fixed waiting unlimited bug
+
+Revision: 80
+* fixed closing bug
+* fixed stuff...
+
+Revision: 79
++ added FFN Switcher GUI Project
+
+Revision: 78
++ added <ComportEnabled> to the gateway settings to enable/disable comport usage
+
+Revision: 77
+* bugfix try 3 for beacon hang
+
+Revision: 76
+* rogerbeep hang bugfix try 2
+
+Revision: 75
+* tried to fix the beacon bug that caused the trigger to hang indefinitely 
+
+Revision: 74
+* bugfix Kalle Bug - when server 1 was used connection was made to server channel 2 with password 2 and vice versa, fixed
+
+Revision: 73
+* neue version 
+
+Revision: 72
+* geänderte Textausgabe Teamspeak Client (keine Wartezeit Angabe)
+
+Revision: 71
+* bugfix - restarting of non-comport switcher works now
+
+Revision: 68
+* added Gateway.NumberOfChecksIfTeamspeakIsLying Setting that defaults to 20 and is the number of times the switcher checks if Teamspeak is reporting wrong values (XP User-Switching)
+
+Revision: 67
++ bugfix for bugfix for bugfix for bugfix of teamspeak user switching bug
+
+Revision: 66
+* when teamspeak was lying about the connect status we stop checking immediately....
+
+Revision: 65
+* bugfix to not disconnect when switching users...
+
+Revision: 64
+* bugfix try 4
+
+Revision: 63
+* Teamspeakprocessor reset bugfix
+
+Revision: 62
+* bugfix for reconnect
+
+Revision: 61
+* updated version
+
+Revision: 60
++ bugfix for teamspeak reset bug
+
+Revision: 59
+* bugfix for welcome channel bug
+
+Revision: 58
+* Peter test
+
+Revision 57:
+* bugfix FlagChannelCommanderWhenSending
+
+Revision: 56
+* reconnect bugfix test
+
+Revision: 54
+* fixed concurrency bug - now starting teamspeak client via TeamspeakClientURL Setting in XML-Config
+
+Revision: 50
++ Kopfhörer aufsetzen bei Bake konfigurierbar (MuteOutputWhenPlayingBeacon)
+
+Revision: 49
+* DelayAfterSendingSeconds -> DelayAfterSendingMilliSeconds
++ Revision is displayed
+
+Revision: 48
++ added Documentation
+
+Revision: 46
+* DLL Bugfix test 1
+
+Revision: 45
+* bugfix for teamspeak closing...now closing correctly
+
+Revision: 44
+* tried to bugfix teamspeak startup
+
+Revision: 43
+* switcher can now be configured to always use ChannelCommander Flag while connected
+
+Revision: 42
++ beacon playing bugfix try 1
+
+Revision: 41
+* bugfix try for beacon player
+* bugfix for handling penalties
++ added binaries to svn
+
+Revision: 40
++ dass gateway die kopfhörer aufsetzt (konfigurierbar)
++ ChannelCommander wenn gateway selbst sendet
+
+Revision: 39
+* bugfixed configfilename handling at startup
+* changed penalty behaviour to "not output muting"... - change that in future releases to configurable behaviour
+
+Revision: 38
+* bugfix for non-argument startup
+
+Revision: 37
++ added ArgsTest - Commandline Testing for FFN Switcher
+
+Revision: 36
++ added multiple configfile support - just add filename to commandline (or -? for help)
++ added Teamspeak Hang detection and automatic restart
+
+Revision: 34
+* some bug fixes
+
+Revision: 33
+* some minor updates
+
+Revision: 32
+* Client Flags updated
+
+Revision: 30
+* rewrote the Delay and After-Delay code
+
+Revision: 29
+* some tweaking
+* bugfixed ClientFlags.cs
+
+Revision: 28
+* RogerBeep working
++ added serial Port control thread
++ changed Teamspeak Processor workflow
+
+Revision: 27
+* connect to Server 2 after x Tries implemented
+
+Revision: 26
+* monitoring channel messages now
+* monitoring who is speaking and reacting
+
+Revision: 25
+* fixed some bugs
++ added new TSRemote.dll without memory leak
+
+Revision: 24
++ added simple Login + Channel Hopping + Flag Setting
++ added TSRemote.dll
++ added ClientFlag Class
+
+Revision: 23
+* SetSettingsValue works
+
+Revision: 22
++ added Reflection based Settings methods to Settings.cs and TemplateProcessor.cs
+
+Revision: 21
+* updated SettingsProcessor Output to match [] scheme
+
+Revision: 20
++ forgot to checkin the reorganized processors
+
+Revision: 19
++ added favicon.ico
++ added TeamspeakProcessor.cs
+* reorganized Processor Structure
+
+Revision: 18
++ added Icon
+
+Revision: 17
++ added setup project
+- removed Adobe Javascripts...(damn!)
+
+Revision: 16
++ added HTTP Server
++ added TemplateProcessor
++ added new version of web gui
++ added new "schalter.svg" (made by Stephanie)
+
+Revision: 15
++ added some pictures
+
+Revision: 14
++ added some settings
+* updated WebUserInterface
+
+Revision: 13
++ added initial version of WebUserinterface
++ added YAML Framework
++ added Pictures, Logos, Licenses
+
+Revision: 12
+* added http server options
+
+Revision: 11
++ added HandleMessageCommands.cs to receive and handle TextMessages from Teamspeak
++ added GetTextFromTeamspeak Prototype
+
+Revision: 10
++ added WebUI Prototype
+* changed Teamspeak Prototype code to actually work
+* changed Comport Prototype code to actually work
+
+Revision: 9
++ added TeamspeakProcessor.cs
+
+Revision: 8
++ added BeaconProcessor
++ added Serialport Processor
+* updated Logging
+* updated Configfile Handling and default settings
+
+Revision: 7
++ added PlaySound Prototype
+
+Revision: 6
++ added Settings
+* updated Switcher and SwitcherApp
+
+Revision: 5
++ added SettingsProcessor + Settings Objects
++ added License
++ added ConsoleOutputLogger
++ added Version Properties
+
+Revision: 3
++ added SerialPortTest
++ added TeamSpeakTest
++ added TSRemote DLL + C# Wrapper
+* fixed a bug in channellisting in TSRemote.cs
+
+Revision: 2
+* reorg
+
+Revision: 1
+* erster checkin
++ Grundstruktur

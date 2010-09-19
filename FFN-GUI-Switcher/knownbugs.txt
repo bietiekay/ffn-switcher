@@ -1,0 +1,18 @@
+Todo: 
+- zurückblättern in Assistent
+
+- [01:30:40] *priv* 056 Bochum NRW CB CH39 -USB- : Ich hatte einen Fehler in Deinem Programm vermutet...aber es war ein Denkfehler von mir. Das USB-Interface funktioniert nun, ist testweise sogar installiert. Kannst Du neben der Einstellung RTS/DTR jeweils einen Button einrichten damit ich zum Testen der Interfaces die Signale manuell antasten Kann ?
+- Neulogin / Interner restart ohne programm restart
+- Fenster verkleinerbar
+- Mikrofon Mute für einstellbare ZEit nach DUrchgang eines anderen Gateways
+
+Known Bugs:
+
+- wenn der server neugestartet wird und das teamspeak sich selbständig wieder neu verbindet
+  wird das u.U. nicht erkannt und die Whisper und ChannelCommander Lampe nichtmehr korrekt
+  gesetzt.
+- sometimes the switcher does not shut down correctly and needs to be killed via task manager
+- when settings need to be saved it could crash
+	 EventType : clr20r3     P1 : ffn-gui-switcher.exe     P2 : 1.0.0.85     
+	 P3 : 48cfff57     P4 : mscorlib     P5 : 2.0.0.0     P6 : 471ebc5b     P7 : 3408
+	 P8 : 10     P9 : system.objectdisposedexception     
