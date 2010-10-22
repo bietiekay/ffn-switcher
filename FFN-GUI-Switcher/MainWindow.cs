@@ -44,7 +44,7 @@ namespace FFN_Switcher
         public MainWindow()
         {
             InitializeComponent();
-
+            this.Text = "Freies Funknetz Switcher Version " + Version.VersionNumber;
         }
 
         private void informationenToolStripMenuItem_Click(object sender, EventArgs e)

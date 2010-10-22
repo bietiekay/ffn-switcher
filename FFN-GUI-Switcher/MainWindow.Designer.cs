@@ -321,6 +321,7 @@
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Strafbank - wenn das Gateway in einen anderen Channel verschoben wurde";
+            this.groupBox5.Visible = false;
             // 
             // checkBox7
             // 
@@ -334,6 +335,7 @@
             this.checkBox7.Text = "nach der Wartezeit wieder zurück in den Gateway Channel wechseln.";
             this.ToolTip.SetToolTip(this.checkBox7, resources.GetString("checkBox7.ToolTip"));
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.Visible = false;
             this.checkBox7.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // numericUpDown8
@@ -345,6 +347,7 @@
             this.numericUpDown8.TabIndex = 20;
             this.ToolTip.SetToolTip(this.numericUpDown8, resources.GetString("numericUpDown8.ToolTip"));
             this.numericUpDown8.Value = global::FFN_Switcher.Properties.Settings.Default.WaitPenaltyMinutes;
+            this.numericUpDown8.Visible = false;
             this.numericUpDown8.ValueChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // checkBox6
@@ -359,6 +362,7 @@
             this.checkBox6.Text = "Gateway stummschalten wenn verschoben worden.";
             this.ToolTip.SetToolTip(this.checkBox6, resources.GetString("checkBox6.ToolTip"));
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.Visible = false;
             this.checkBox6.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label12
@@ -371,6 +375,7 @@
             this.label12.Text = "Minuten die Position halten wenn Gateway in einen andern Channel verschoben wurde" +
                 ".";
             this.ToolTip.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
+            this.label12.Visible = false;
             // 
             // groupBox4
             // 

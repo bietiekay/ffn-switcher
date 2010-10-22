@@ -1,5 +1,7 @@
 Revision 109:
 + Funktion hinzugefügt um die aktuelle ChannelID von Teamspeak zu übernehmen
+* Strafbank deaktiviert
++ Switcherversion wird im Fenstertitel angezeigt
 
 Revision 108:
 * bugfix: Mute ist manchmal bestehen geblieben wenn Gateway Voice entzogen wurde und wieder zurückgegeben wurde

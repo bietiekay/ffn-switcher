@@ -312,6 +312,7 @@ namespace FFN_Switcher.Processors
             String CurrentShouldChannelPW;
             Int32 MyOwnID;
             Boolean CurrentlySending = false;
+            Boolean goneChannelOnFirstConnect = false;
             DateTime StartedToSend = DateTime.Now;
             Int32 NumberOfFailedReconnects = 0;
             DateTime LastBeacon = DateTime.Now;
@@ -507,8 +508,8 @@ namespace FFN_Switcher.Processors
                             }
                             voicegenommen = true;
 
-                            if (FFN_Switcher.Properties.Settings.Default.WhenMovedToOtherChannelOutputMute)
-                                TeamspeakFlags.OutputMuted = true;
+                            //if (FFN_Switcher.Properties.Settings.Default.WhenMovedToOtherChannelOutputMute)
+                            //    TeamspeakFlags.OutputMuted = true;
                         }
                         else
                         {
@@ -874,92 +875,40 @@ namespace FFN_Switcher.Processors
                         }
                         #endregion
 
-                        // we're obviously not in the channel were we should be
-                        #region check if we're on penalty
-                        if ((movedByOtherUser) && (ConnectedToServer) && (!CurrentlyOnPenalty))
+                        if (!goneChannelOnFirstConnect)
                         {
-
-                            // Play Disabled Sound if allowed
-                            if (FFN_Switcher.Properties.Settings.Default.PlayWhenDisabled)
+                            ConsoleOutputLogger.WriteLine("[TS] Erster Connect -> Wechsle in Channel " + CurrentShouldChannelID);
+                            Int32 ChannelSwitching = TSRemote.SwitchChannels(CurrentShouldChannelID, CurrentShouldChannelPW);
+                            if (ChannelSwitching == -1)
+                                ConnectedToServer = false;
+                            if (ChannelSwitching == 20)
                             {
-                                serialportProcessor.SwitchOn();
-                                beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile);
-                                serialportProcessor.SwitchOff();
+                                ConsoleOutputLogger.WriteLine("[TS] Wollte in Channel wechseln, aber Channel existiert nicht. Bitte überprüfen!");
+                                ConsoleOutputLogger.WriteLine("[TS] Teamspeak Client pausiert.");
+                                paused = true;
                             }
-
-                            // check if we're already connected or not...
-                            ConsoleOutputLogger.WriteLine("[TS] Der Switcher hat kein Voice mehr im Channel oder wurde verschoben!");
-                            ConsoleOutputLogger.WriteLine("[TS] Wechsle in " + FFN_Switcher.Properties.Settings.Default .WaitPenaltyMinutes+ " Minuten wieder zurück in den Channel.");
-
-                            if (FFN_Switcher.Properties.Settings.Default.WhenMovedToOtherChannelOutputMute)
-                                TeamspeakFlags.OutputMuted = true;
-
-                            //Thread.Sleep(internalSettings.Gateway.WaitPenaltyMinutes * 1000 * 60);
-                            PenaltyStarted = DateTime.Now;
-                            CurrentlyOnPenalty = true;
-                        }
-                        else
-                        {
-                            if (CurrentlyOnPenalty)
+                            // we successfully switched!!!
+                            if (ChannelSwitching == 0)
                             {
-                                #region CurrentlyOnPenalty
-                                if ((DateTime.Now - PenaltyStarted).TotalMinutes >= Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitPenaltyMinutes))
+                                ConsoleOutputLogger.WriteLine("[TS] Teamspeak meldet dass wir in Channel mit ID " + CurrentShouldChannelID + " gewechselt haben.");
+                                // Play enabled Sound if allowed
+                                if (FFN_Switcher.Properties.Settings.Default.PlayAtConnect)
                                 {
-                                    if (FFN_Switcher.Properties.Settings.Default.JumpBackToChannelAfterWaitPenaltyMinutes)
-                                    {
-                                        ConsoleOutputLogger.WriteLine("[TS] Wartezeit zuende.");
-                                        movedByOtherUser = false;
-                                        CurrentlyOnPenalty = false;
-                                        if (FFN_Switcher.Properties.Settings.Default.WhenMovedToOtherChannelOutputMute)
-                                            TeamspeakFlags.OutputMuted = false;
-                                    }
-                                    else
-                                    {
-                                        PenaltyStarted = DateTime.Now;
-                                    }
+                                    if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
+                                        TeamspeakFlags.OutputMuted = true;
+
+                                    serialportProcessor.SwitchOn();
+                                    beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.ConnectFile);
+                                    serialportProcessor.SwitchOff();
+
+                                    if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
+                                        TeamspeakFlags.OutputMuted = false;
                                 }
                             }
-                            else
-                            {
-                                ConsoleOutputLogger.WriteLine("[TS] Wechsle in Channel " + CurrentShouldChannelID);
-                                Int32 ChannelSwitching = TSRemote.SwitchChannels(CurrentShouldChannelID, CurrentShouldChannelPW);
-                                if (ChannelSwitching == -1)
-                                    ConnectedToServer = false;
-                                if (ChannelSwitching == 20)
-                                {
-                                    ConsoleOutputLogger.WriteLine("[TS] Wollte in Channel wechseln, aber Channel existiert nicht. Bitte überprüfen!");
-                                    ConsoleOutputLogger.WriteLine("[TS] Teamspeak Client pausiert.");
-                                    paused = true;
-                                }
-                                // we successfully switched!!!
-                                if (ChannelSwitching == 0)
-                                {
-                                    ConsoleOutputLogger.WriteLine("[TS] Teamspeak meldet dass wir in Channel mit ID " + CurrentShouldChannelID+ " gewechselt haben.");
-                                    // Play enabled Sound if allowed
-                                    if (FFN_Switcher.Properties.Settings.Default.PlayAtConnect)
-                                    {
-                                        if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
-                                            TeamspeakFlags.OutputMuted = true;
-                                        
-                                        serialportProcessor.SwitchOn();
-                                        beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.ConnectFile);
-                                        serialportProcessor.SwitchOff();
-
-                                        if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
-                                            TeamspeakFlags.OutputMuted = false;
-                                    }
-
-                                    // if we're now moved we we're moved by another user...
-                                    movedByOtherUser = true;
-
-                                    Thread.Sleep(500);
-                                }
-                                #endregion
-                            }
+                            goneChannelOnFirstConnect = true;
                         }
                         #endregion
 
-                        #endregion
                     }
                     #endregion
 
@@ -969,7 +918,7 @@ namespace FFN_Switcher.Processors
                 {
                     #region Connect to Server
                     Thread.Sleep(1000);
-
+                    goneChannelOnFirstConnect = false;
                     ConsoleOutputLogger.WriteLine("[TS] Verbinde mit " + FFN_Switcher.Properties.Settings.Default.TSServer1_ServerURL);
                     ConsoleOutputLogger.WriteLine("[TS] Warte " + FFN_Switcher.Properties.Settings.Default.WaitForConnectSeconds + " Sekunden auf Teamspeak Client Rückmeldung...");
                     // connect
