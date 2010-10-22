@@ -444,6 +444,8 @@ namespace FFN_Switcher.Processors
                         }
 
                         PlayBeacons.Clear();
+                        if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
+                            TeamspeakFlags.OutputMuted = false;
                     }
                 }
 
@@ -504,7 +506,7 @@ namespace FFN_Switcher.Processors
                             }
                             voicegenommen = true;
 
-                            if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
+                            if (FFN_Switcher.Properties.Settings.Default.WhenMovedToOtherChannelOutputMute)
                                 TeamspeakFlags.OutputMuted = true;
                         }
                         else
