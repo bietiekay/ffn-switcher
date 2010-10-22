@@ -1,6 +1,8 @@
+Revision 109:
++ Funktion hinzugefügt um die aktuelle ChannelID von Teamspeak zu übernehmen
+
 Revision 108:
 * bugfix: Mute ist manchmal bestehen geblieben wenn Gateway Voice entzogen wurde und wieder zurückgegeben wurde
-
 
 Revision 107:
 + es kann nun konfiguriert werden dass die Gateway-deaktiviert Warnung 

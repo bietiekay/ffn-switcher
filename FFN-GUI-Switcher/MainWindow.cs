@@ -370,5 +370,23 @@ namespace FFN_Switcher
 
         }
 
+        // channel ID übernehmen in NumericUpDown10
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (internalSwitcher.tsProcessor.lastknownChannelID != -1)
+            { 
+                numericUpDown10.Value = internalSwitcher.tsProcessor.lastknownChannelID;
+            }
+        }
+
+        // channel ID übernehmen in NumericUpDown11
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (internalSwitcher.tsProcessor.lastknownChannelID != -1)
+            {
+                numericUpDown11.Value = internalSwitcher.tsProcessor.lastknownChannelID;
+            }
+        }
+
     }
 }

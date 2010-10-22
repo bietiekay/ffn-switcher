@@ -29,6 +29,8 @@ namespace FFN_Switcher.Processors
         public List<String> PlayBeacons = null;
         public DateTime whenGatewaywasDeactivated = DateTime.MinValue;
         public DateTime whenGatewaywasOffline = DateTime.MinValue;
+        public Int32 lastknownChannelID = -1;
+        bool ConnectedToServer = false;
         #endregion
 
         #region Constructor
@@ -303,7 +305,6 @@ namespace FFN_Switcher.Processors
             #region local variables
             bool _PauseDisplayed = false;
             Int32 ConnectedToServerNumber = 0;
-            bool ConnectedToServer = false;
             Int32[] currentlySpeaking = null;
             bool movedByOtherUser = false;
             bool previouslyPaused = false;
@@ -558,13 +559,14 @@ namespace FFN_Switcher.Processors
                     }
 
                     // check if we're in this channel...and have voice...
-                    if (( (TSRemote.UserInfo.Channel.ChannelID == CurrentShouldChannelID) || (CurrentlyOnPenalty)))
+                    lastknownChannelID = TSRemote.UserInfo.Channel.ChannelID;
+                    if (((lastknownChannelID == CurrentShouldChannelID) || (CurrentlyOnPenalty)))
                     {
                         #region Right Channel
                         // we're already in the channel we should be...
 
                         #region We're back in the right channel...
-                        if ((TSRemote.UserInfo.Channel.ChannelID == CurrentShouldChannelID) && (CurrentlyOnPenalty))
+                        if ((lastknownChannelID == CurrentShouldChannelID) && (CurrentlyOnPenalty))
                         {
                             ConsoleOutputLogger.WriteLine("[TS] Gateway ist wieder im richtigen Channel oder hat wieder Voice erhalten.");
                             
