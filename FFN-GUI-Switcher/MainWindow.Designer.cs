@@ -73,6 +73,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.BeaconSettingsTab = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label40 = new System.Windows.Forms.Label();
             this.offline_playbutton = new System.Windows.Forms.Button();
             this.rogerbeep_playbutton = new System.Windows.Forms.Button();
             this.deaktiviert_playbutton = new System.Windows.Forms.Button();
@@ -108,7 +109,9 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.sprechpauseMessage = new System.Windows.Forms.CheckBox();
+            this.checkBox25 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
+            this.label41 = new System.Windows.Forms.Label();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
@@ -140,6 +143,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.checkBox22 = new System.Windows.Forms.CheckBox();
@@ -156,6 +161,7 @@
             this.checkBox17 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
+            this.sprechpauseMessage = new System.Windows.Forms.CheckBox();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
@@ -183,6 +189,7 @@
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
@@ -194,6 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
@@ -262,7 +270,7 @@
             this.SwitcherTabControl.Location = new System.Drawing.Point(0, 24);
             this.SwitcherTabControl.Name = "SwitcherTabControl";
             this.SwitcherTabControl.SelectedIndex = 0;
-            this.SwitcherTabControl.Size = new System.Drawing.Size(695, 331);
+            this.SwitcherTabControl.Size = new System.Drawing.Size(695, 374);
             this.SwitcherTabControl.TabIndex = 2;
             // 
             // StatusTab
@@ -271,7 +279,7 @@
             this.StatusTab.Location = new System.Drawing.Point(4, 22);
             this.StatusTab.Name = "StatusTab";
             this.StatusTab.Padding = new System.Windows.Forms.Padding(3);
-            this.StatusTab.Size = new System.Drawing.Size(687, 305);
+            this.StatusTab.Size = new System.Drawing.Size(687, 348);
             this.StatusTab.TabIndex = 0;
             this.StatusTab.Text = "Status";
             this.StatusTab.UseVisualStyleBackColor = true;
@@ -282,7 +290,7 @@
             this.StatusListBox.FormattingEnabled = true;
             this.StatusListBox.Location = new System.Drawing.Point(3, 3);
             this.StatusListBox.Name = "StatusListBox";
-            this.StatusListBox.Size = new System.Drawing.Size(681, 290);
+            this.StatusListBox.Size = new System.Drawing.Size(681, 342);
             this.StatusListBox.TabIndex = 0;
             // 
             // GatewaySettingsTab
@@ -294,7 +302,7 @@
             this.GatewaySettingsTab.Location = new System.Drawing.Point(4, 22);
             this.GatewaySettingsTab.Name = "GatewaySettingsTab";
             this.GatewaySettingsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.GatewaySettingsTab.Size = new System.Drawing.Size(687, 305);
+            this.GatewaySettingsTab.Size = new System.Drawing.Size(687, 348);
             this.GatewaySettingsTab.TabIndex = 1;
             this.GatewaySettingsTab.Text = "allgemeine Einstellungen";
             this.GatewaySettingsTab.UseVisualStyleBackColor = true;
@@ -307,7 +315,7 @@
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Location = new System.Drawing.Point(8, 213);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(671, 70);
+            this.groupBox5.Size = new System.Drawing.Size(671, 74);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Strafbank - wenn das Gateway in einen anderen Channel verschoben wurde";
@@ -506,7 +514,7 @@
             this.GatewayServerSettingsTab.Controls.Add(this.groupBox1);
             this.GatewayServerSettingsTab.Location = new System.Drawing.Point(4, 22);
             this.GatewayServerSettingsTab.Name = "GatewayServerSettingsTab";
-            this.GatewayServerSettingsTab.Size = new System.Drawing.Size(687, 305);
+            this.GatewayServerSettingsTab.Size = new System.Drawing.Size(687, 348);
             this.GatewayServerSettingsTab.TabIndex = 2;
             this.GatewayServerSettingsTab.Text = "Server Einstellungen";
             this.GatewayServerSettingsTab.UseVisualStyleBackColor = true;
@@ -527,7 +535,7 @@
             this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Location = new System.Drawing.Point(354, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(325, 283);
+            this.groupBox2.Size = new System.Drawing.Size(325, 337);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Server Verbindung 2";
@@ -593,7 +601,7 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Location = new System.Drawing.Point(8, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(325, 283);
+            this.groupBox1.Size = new System.Drawing.Size(325, 337);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Server Verbindung 1";
@@ -649,13 +657,19 @@
             this.BeaconSettingsTab.Controls.Add(this.groupBox9);
             this.BeaconSettingsTab.Location = new System.Drawing.Point(4, 22);
             this.BeaconSettingsTab.Name = "BeaconSettingsTab";
-            this.BeaconSettingsTab.Size = new System.Drawing.Size(687, 305);
+            this.BeaconSettingsTab.Size = new System.Drawing.Size(687, 348);
             this.BeaconSettingsTab.TabIndex = 4;
             this.BeaconSettingsTab.Text = "Baken Einstellungen";
             this.BeaconSettingsTab.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.label41);
+            this.groupBox10.Controls.Add(this.numericUpDown16);
+            this.groupBox10.Controls.Add(this.checkBox25);
+            this.groupBox10.Controls.Add(this.label40);
+            this.groupBox10.Controls.Add(this.numericUpDown15);
+            this.groupBox10.Controls.Add(this.checkBox24);
             this.groupBox10.Controls.Add(this.offline_playbutton);
             this.groupBox10.Controls.Add(this.rogerbeep_playbutton);
             this.groupBox10.Controls.Add(this.deaktiviert_playbutton);
@@ -683,15 +697,24 @@
             this.groupBox10.Controls.Add(this.textBox14);
             this.groupBox10.Location = new System.Drawing.Point(8, 110);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(671, 176);
+            this.groupBox10.Size = new System.Drawing.Size(671, 230);
             this.groupBox10.TabIndex = 7;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "andere Baken und Signale";
             // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(328, 98);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(189, 13);
+            this.label40.TabIndex = 33;
+            this.label40.Text = "Sekunden Intervallen erneut abspielen";
+            // 
             // offline_playbutton
             // 
             this.offline_playbutton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.offline_playbutton.Location = new System.Drawing.Point(377, 121);
+            this.offline_playbutton.Location = new System.Drawing.Point(377, 152);
             this.offline_playbutton.Name = "offline_playbutton";
             this.offline_playbutton.Size = new System.Drawing.Size(30, 23);
             this.offline_playbutton.TabIndex = 30;
@@ -702,7 +725,7 @@
             // rogerbeep_playbutton
             // 
             this.rogerbeep_playbutton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rogerbeep_playbutton.Location = new System.Drawing.Point(377, 95);
+            this.rogerbeep_playbutton.Location = new System.Drawing.Point(377, 126);
             this.rogerbeep_playbutton.Name = "rogerbeep_playbutton";
             this.rogerbeep_playbutton.Size = new System.Drawing.Size(30, 23);
             this.rogerbeep_playbutton.TabIndex = 29;
@@ -745,7 +768,7 @@
             // 
             // offlinefilebutton
             // 
-            this.offlinefilebutton.Location = new System.Drawing.Point(339, 120);
+            this.offlinefilebutton.Location = new System.Drawing.Point(339, 151);
             this.offlinefilebutton.Name = "offlinefilebutton";
             this.offlinefilebutton.Size = new System.Drawing.Size(32, 23);
             this.offlinefilebutton.TabIndex = 25;
@@ -756,7 +779,7 @@
             // 
             // rogerbeepfilebutton
             // 
-            this.rogerbeepfilebutton.Location = new System.Drawing.Point(339, 94);
+            this.rogerbeepfilebutton.Location = new System.Drawing.Point(339, 125);
             this.rogerbeepfilebutton.Name = "rogerbeepfilebutton";
             this.rogerbeepfilebutton.Size = new System.Drawing.Size(32, 23);
             this.rogerbeepfilebutton.TabIndex = 24;
@@ -802,7 +825,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(31, 126);
+            this.label38.Location = new System.Drawing.Point(31, 157);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(97, 13);
             this.label38.TabIndex = 19;
@@ -811,7 +834,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(8, 100);
+            this.label37.Location = new System.Drawing.Point(8, 131);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(120, 13);
             this.label37.TabIndex = 16;
@@ -940,7 +963,7 @@
             this.TeamspeakTab.Controls.Add(this.groupBox6);
             this.TeamspeakTab.Location = new System.Drawing.Point(4, 22);
             this.TeamspeakTab.Name = "TeamspeakTab";
-            this.TeamspeakTab.Size = new System.Drawing.Size(687, 305);
+            this.TeamspeakTab.Size = new System.Drawing.Size(687, 348);
             this.TeamspeakTab.TabIndex = 3;
             this.TeamspeakTab.Text = "Teamspeak, Webserver, Logfile";
             this.TeamspeakTab.UseVisualStyleBackColor = true;
@@ -955,7 +978,7 @@
             this.groupBox8.Controls.Add(this.checkBox14);
             this.groupBox8.Location = new System.Drawing.Point(8, 166);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(671, 131);
+            this.groupBox8.Size = new System.Drawing.Size(671, 174);
             this.groupBox8.TabIndex = 2;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Logfile";
@@ -1067,21 +1090,34 @@
             // 
             this.ToolTip.IsBalloon = true;
             // 
-            // sprechpauseMessage
+            // checkBox25
             // 
-            this.sprechpauseMessage.AutoSize = true;
-            this.sprechpauseMessage.Checked = global::FFN_Switcher.Properties.Settings.Default.NotifyIfSpeakPauseFail;
-            this.sprechpauseMessage.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "NotifyIfSpeakPauseFail", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.sprechpauseMessage.Location = new System.Drawing.Point(58, 91);
-            this.sprechpauseMessage.Name = "sprechpauseMessage";
-            this.sprechpauseMessage.Size = new System.Drawing.Size(527, 17);
-            this.sprechpauseMessage.TabIndex = 23;
-            this.sprechpauseMessage.Text = "Zeitüberschreitungen als Channel Messages anzeigen (ACHTUNG BITTE SPRECHPAUSE EIN" +
-                "HALTEN!)";
-            this.ToolTip.SetToolTip(this.sprechpauseMessage, "Zeigt als Channel-Message eine Nachricht an wenn die Sprechpause nicht eingehalte" +
-                    "n wird.");
-            this.sprechpauseMessage.UseVisualStyleBackColor = true;
-            this.sprechpauseMessage.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            this.checkBox25.AutoSize = true;
+            this.checkBox25.Location = new System.Drawing.Point(134, 181);
+            this.checkBox25.Name = "checkBox25";
+            this.checkBox25.Size = new System.Drawing.Size(114, 17);
+            this.checkBox25.TabIndex = 34;
+            this.checkBox25.Text = "Offline-Warnung in";
+            this.ToolTip.SetToolTip(this.checkBox25, "Soll die Warnung dass das Gateway offline ist im festgelegten Intervall erneut ab" +
+                    "gespielt werden? Die Warnung wird in jedem Fall nur dann wiederholt wenn die War" +
+                    "nung überhaupt aktiviert wurde.");
+            this.checkBox25.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown16
+            // 
+            this.numericUpDown16.Location = new System.Drawing.Point(246, 178);
+            this.numericUpDown16.Name = "numericUpDown16";
+            this.numericUpDown16.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDown16.TabIndex = 35;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(302, 182);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(189, 13);
+            this.label41.TabIndex = 36;
+            this.label41.Text = "Sekunden Intervallen erneut abspielen";
             // 
             // checkBox7
             // 
@@ -1496,12 +1532,41 @@
             this.ToolTip.SetToolTip(this.textBox2, "Hier die Serveradresse des Teamspeak Servers\r\nangeben. z.B: voice.ts-ffn.de");
             this.textBox2.TextChanged += new System.EventHandler(this.enableSaveSettings);
             // 
+            // numericUpDown15
+            // 
+            this.numericUpDown15.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "ReplayGatewayDeactivatedSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown15.Location = new System.Drawing.Point(265, 95);
+            this.numericUpDown15.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown15.Name = "numericUpDown15";
+            this.numericUpDown15.Size = new System.Drawing.Size(57, 20);
+            this.numericUpDown15.TabIndex = 32;
+            this.numericUpDown15.Value = global::FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivatedSeconds;
+            // 
+            // checkBox24
+            // 
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.Checked = global::FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivated;
+            this.checkBox24.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "ReplayGatewayDeactivated", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox24.Location = new System.Drawing.Point(134, 97);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(138, 17);
+            this.checkBox24.TabIndex = 31;
+            this.checkBox24.Text = "Deaktiviert-Warnung in ";
+            this.ToolTip.SetToolTip(this.checkBox24, "Soll die Warnung dass das Gateway deaktiviert wurde im festgelegten Intervall ern" +
+                    "eut abgespielt werden? Die Warnung wird in jedem Fall nur dann wiederholt wenn d" +
+                    "ie Warnung überhaupt aktiviert wurde.");
+            this.checkBox24.UseVisualStyleBackColor = true;
+            // 
             // checkBox23
             // 
             this.checkBox23.AutoSize = true;
             this.checkBox23.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayWhenOffline;
             this.checkBox23.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayWhenOffline", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox23.Location = new System.Drawing.Point(413, 125);
+            this.checkBox23.Location = new System.Drawing.Point(413, 156);
             this.checkBox23.Name = "checkBox23";
             this.checkBox23.Size = new System.Drawing.Size(203, 17);
             this.checkBox23.TabIndex = 20;
@@ -1512,7 +1577,7 @@
             // textBox18
             // 
             this.textBox18.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "GatewayOfflineFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox18.Location = new System.Drawing.Point(134, 123);
+            this.textBox18.Location = new System.Drawing.Point(134, 154);
             this.textBox18.MaxLength = 128;
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(199, 20);
@@ -1526,7 +1591,7 @@
             this.checkBox22.AutoSize = true;
             this.checkBox22.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayRogerBeep;
             this.checkBox22.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayRogerBeep", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox22.Location = new System.Drawing.Point(413, 99);
+            this.checkBox22.Location = new System.Drawing.Point(413, 130);
             this.checkBox22.Name = "checkBox22";
             this.checkBox22.Size = new System.Drawing.Size(130, 17);
             this.checkBox22.TabIndex = 17;
@@ -1537,7 +1602,7 @@
             // textBox17
             // 
             this.textBox17.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "RogerBeepFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox17.Location = new System.Drawing.Point(134, 97);
+            this.textBox17.Location = new System.Drawing.Point(134, 128);
             this.textBox17.MaxLength = 128;
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(199, 20);
@@ -1710,8 +1775,24 @@
             this.textBox13.TabIndex = 4;
             this.textBox13.Text = global::FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile;
             this.ToolTip.SetToolTip(this.textBox13, "Hier die Sounddatei angeben die als Gateway-Bake\r\ngespielt werden soll.");
-            this.textBox13.TextChanged += new System.EventHandler(this.enableSaveSettings);
             this.textBox13.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            this.textBox13.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // sprechpauseMessage
+            // 
+            this.sprechpauseMessage.AutoSize = true;
+            this.sprechpauseMessage.Checked = global::FFN_Switcher.Properties.Settings.Default.NotifyIfSpeakPauseFail;
+            this.sprechpauseMessage.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "NotifyIfSpeakPauseFail", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.sprechpauseMessage.Location = new System.Drawing.Point(58, 91);
+            this.sprechpauseMessage.Name = "sprechpauseMessage";
+            this.sprechpauseMessage.Size = new System.Drawing.Size(527, 17);
+            this.sprechpauseMessage.TabIndex = 23;
+            this.sprechpauseMessage.Text = "Zeitüberschreitungen als Channel Messages anzeigen (ACHTUNG BITTE SPRECHPAUSE EIN" +
+                "HALTEN!)";
+            this.ToolTip.SetToolTip(this.sprechpauseMessage, "Zeigt als Channel-Message eine Nachricht an wenn die Sprechpause nicht eingehalte" +
+                    "n wird.");
+            this.sprechpauseMessage.UseVisualStyleBackColor = true;
+            this.sprechpauseMessage.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // checkBox15
             // 
@@ -1853,18 +1934,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 355);
+            this.ClientSize = new System.Drawing.Size(695, 398);
             this.Controls.Add(this.SwitcherTabControl);
             this.Controls.Add(this.MainMenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(711, 393);
+            this.MaximumSize = new System.Drawing.Size(711, 436);
             this.MinimumSize = new System.Drawing.Size(350, 200);
             this.Name = "MainWindow";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Freies Funknetz Switcher";
-            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainWindow_FormClosed);
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.MainMenuStrip.ResumeLayout(false);
             this.MainMenuStrip.PerformLayout();
             this.SwitcherTabControl.ResumeLayout(false);
@@ -1895,6 +1976,7 @@
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
@@ -1906,6 +1988,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
@@ -2051,6 +2134,12 @@
         private System.Windows.Forms.ToolStripMenuItem nachUpdateSuchenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem überToolStripMenuItem;
         private System.Windows.Forms.CheckBox sprechpauseMessage;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.NumericUpDown numericUpDown15;
+        private System.Windows.Forms.CheckBox checkBox24;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.NumericUpDown numericUpDown16;
+        private System.Windows.Forms.CheckBox checkBox25;
     }
 }
 

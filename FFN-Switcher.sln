@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CLI", "CLI", "{A5C29E2E-F08
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Changelog", "Changelog", "{FD5BACD3-4326-436B-BFC8-E4C4C0BAA9B0}"
 	ProjectSection(SolutionItems) = preProject
-		..\Documentation\changelog.txt = ..\Documentation\changelog.txt
+		changelog.txt = changelog.txt
 		FFN-GUI-Switcher\knownbugs.txt = FFN-GUI-Switcher\knownbugs.txt
 	EndProjectSection
 EndProject

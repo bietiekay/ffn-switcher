@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="FFN-Switcher">
+</Property><Property Name="Solution File" Value="C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher.sln">
+</Property><Property Name="Date" Value="Freitag, 22. Oktober 2010">
+</Property><Property Name="Time" Value="14:52">
+</Property></Properties><Event ErrorLevel="1" Project="FFN-Console-Switcher" Source="FFN-Switcher\FFN-Console-Switcher.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="FFN-Console-Switcher" Source="FFN-Switcher\FFN-Console-Switcher.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FFN-Console-Switcher" Source="FFN-Switcher\FFN-Console-Switcher.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FFN-GUI-Switcher" Source="FFN-GUI-Switcher\FFN-GUI-Switcher.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FFN-GUI-Switcher" Source="FFN-GUI-Switcher\FFN-GUI-Switcher.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="IPAddressControlLib" Source="FFN-GUI-Switcher\IPAddressControl\IPAddressControlLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="IPAddressControlLib" Source="FFN-GUI-Switcher\IPAddressControl\IPAddressControlLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="RSS.NET" Source="FFN-GUI-Switcher\RSS.NET\RSS.NET.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="RSS.NET" Source="FFN-GUI-Switcher\RSS.NET\RSS.NET.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RSS.NET" Source="FFN-GUI-Switcher\RSS.NET\RSS.NET.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CreateUpdateXML" Source="TestVersionUpdate\CreateUpdateXML.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CreateUpdateXML" Source="TestVersionUpdate\CreateUpdateXML.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CheckForUpdate" Source="CheckForUpdate\CheckForUpdate.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CheckForUpdate" Source="CheckForUpdate\CheckForUpdate.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="FFN-Switcher.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="FFN-Switcher.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FFN-GUI-Switcher" Source="FFN-GUI-Switcher\FFN-GUI-Switcher.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="IPAddressControlLib" Source="FFN-GUI-Switcher\IPAddressControl\IPAddressControlLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="IPAddressControlLib" Source="FFN-GUI-Switcher\IPAddressControl\IPAddressControlLib.csproj" Description="Created rule set file &quot;C:\Users\bietiekay\Desktop\ffn-switcher\FFN-GUI-Switcher\IPAddressControl\Migrated rules for IPAddressControlLib.ruleset&quot; for the &quot;Debug (Any CPU)&quot; configuration.">
+</Event><Event ErrorLevel="0" Project="RSS.NET" Source="FFN-GUI-Switcher\RSS.NET\RSS.NET.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FFN-Console-Switcher" Source="FFN-Switcher\FFN-Console-Switcher.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CreateUpdateXML" Source="TestVersionUpdate\CreateUpdateXML.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CheckForUpdate" Source="CheckForUpdate\CheckForUpdate.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

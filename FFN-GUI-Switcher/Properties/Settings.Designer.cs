@@ -838,5 +838,53 @@ namespace FFN_Switcher.Properties {
                 this["NotifyIfSpeakPauseFail"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ReplayGatewayDeactivated {
+            get {
+                return ((bool)(this["ReplayGatewayDeactivated"]));
+            }
+            set {
+                this["ReplayGatewayDeactivated"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300")]
+        public decimal ReplayGatewayDeactivatedSeconds {
+            get {
+                return ((decimal)(this["ReplayGatewayDeactivatedSeconds"]));
+            }
+            set {
+                this["ReplayGatewayDeactivatedSeconds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ReplayGatewayOffline {
+            get {
+                return ((bool)(this["ReplayGatewayOffline"]));
+            }
+            set {
+                this["ReplayGatewayOffline"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300")]
+        public decimal ReplayGatewayOfflineSeconds {
+            get {
+                return ((decimal)(this["ReplayGatewayOfflineSeconds"]));
+            }
+            set {
+                this["ReplayGatewayOfflineSeconds"] = value;
+            }
+        }
     }
 }

@@ -27,6 +27,8 @@ namespace FFN_Switcher.Processors
         public ClientFlags TeamspeakFlags = null;
         public ChannelFlags TeamspeakChannelFlags = null;
         public List<String> PlayBeacons = null;
+        public DateTime whenGatewaywasDeactivated = DateTime.MinValue;
+        public DateTime whenGatewaywasOffline = DateTime.MinValue;
         #endregion
 
         #region Constructor
@@ -362,16 +364,43 @@ namespace FFN_Switcher.Processors
 
                         RestartTeamspeak();
 
-                        // Play DisConnect Sound if allowed
+                        // Play Disconnect Sound if allowed
                         if (FFN_Switcher.Properties.Settings.Default.PlayWhenOffline)
                         {
+                            ConsoleOutputLogger.WriteLine("[TS] Spiele Gateway-Offline Meldung ab...");
                             serialportProcessor.SwitchOn();
                             beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile);
                             serialportProcessor.SwitchOff();
                         }
                     }
+                    else
+                    {
+                        // erneut die Offline Meldung abspielen wenn das so konfiguriert wurde
+                        if ((FFN_Switcher.Properties.Settings.Default.ReplayGatewayOffline) && (FFN_Switcher.Properties.Settings.Default.PlayWhenOffline))
+                        {
+                            // offenbar wurde es so konfiguriert
+                            if (whenGatewaywasOffline == DateTime.MinValue)
+                            {
+                                whenGatewaywasOffline = DateTime.Now;
+                            }
+                            else
+                            {
+                                TimeSpan ts2 = DateTime.Now - whenGatewaywasOffline;
+
+                                if (ts2.TotalSeconds >= (double)FFN_Switcher.Properties.Settings.Default.ReplayGatewayOfflineSeconds)
+                                {
+                                    whenGatewaywasOffline = DateTime.Now;
+                                    ConsoleOutputLogger.WriteLine("[TS] Spiele Gateway-Offline Meldung erneut ab...");
+                                    serialportProcessor.SwitchOn();
+                                    beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile);
+                                    serialportProcessor.SwitchOff();
+                                }
+                            }
+                        }
+                    }
                     Thread.Sleep(1000);
                 }
+                whenGatewaywasOffline = DateTime.MinValue;
                 #endregion
 
                 lock (PlayBeacons)
@@ -468,6 +497,7 @@ namespace FFN_Switcher.Processors
 
                             if (FFN_Switcher.Properties.Settings.Default.PlayWhenDisabled)
                             {
+                                ConsoleOutputLogger.WriteLine("[TS] Gateway wurde deaktiviert. Spiele Deaktiviert-Sound ab.");
                                 serialportProcessor.SwitchOn();
                                 beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile);
                                 serialportProcessor.SwitchOff();
@@ -477,6 +507,31 @@ namespace FFN_Switcher.Processors
                             if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
                                 TeamspeakFlags.OutputMuted = true;
                         }
+                        else
+                        {
+                            if ((FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivated) && (FFN_Switcher.Properties.Settings.Default.PlayWhenDisabled))
+                            {
+                                // uns wurde Voice genommen, wir haben schon einmal das GatewayDisabledFile abgespielt, also
+                                // spielen wir es eventuell nach einem festgelegten Zeitraum erneut ab
+                                if (whenGatewaywasDeactivated == DateTime.MinValue)
+                                {
+                                    whenGatewaywasDeactivated = DateTime.Now;
+                                }
+                                else
+                                {
+                                    TimeSpan ts1 = DateTime.Now - whenGatewaywasDeactivated;
+
+                                    if (ts1.TotalSeconds >= (double)FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivatedSeconds)
+                                    {
+                                        whenGatewaywasDeactivated = DateTime.Now;
+                                        ConsoleOutputLogger.WriteLine("[TS] Gateway wurde deaktiviert. Spiele erneut Deaktiviert-Sound ab.");
+                                        serialportProcessor.SwitchOn();
+                                        beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile);
+                                        serialportProcessor.SwitchOff();
+                                    }
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -485,7 +540,7 @@ namespace FFN_Switcher.Processors
                         if (voicegenommen)
                         {
                             voicegenommen = false;
-
+                            whenGatewaywasDeactivated = DateTime.MinValue;
                             // Play Online Sound if allowed
                             if (FFN_Switcher.Properties.Settings.Default.PlayAtConnect)
                             {

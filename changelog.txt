@@ -1,3 +1,9 @@
+Revision 107:
++ es kann nun konfiguriert werden dass die Gateway-deaktiviert Warnung 
+  in konfigurierbaren Abständen erneut abgespielt wird
++ es kann nun konfiguriert werden dass die Gateway-Offline Warnung in 
+  konfigurierbaren Abständen erneut abgespielt wird
+
 Revision 106:
 + neue Funktion um Sprechpausen Warnmeldungen in den Channel zu leiten
 

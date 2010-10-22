@@ -12,3 +12,10 @@ C:\Users\bietiekay.SONES\Desktop\ffn-switcher\trunk\FFN-Switcher2\CheckForUpdate
 C:\Users\bietiekay.SONES\Desktop\ffn-switcher\trunk\FFN-Switcher2\CheckForUpdate\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\bietiekay.SONES\Desktop\ffn-switcher\trunk\FFN-Switcher2\CheckForUpdate\obj\Debug\CheckForUpdate.exe
 C:\Users\bietiekay.SONES\Desktop\ffn-switcher\trunk\FFN-Switcher2\CheckForUpdate\obj\Debug\CheckForUpdate.pdb
+C:\Users\bietiekay\Desktop\ffn-switcher\CheckForUpdate\bin\Debug\CheckForUpdate.exe
+C:\Users\bietiekay\Desktop\ffn-switcher\CheckForUpdate\bin\Debug\CheckForUpdate.pdb
+C:\Users\bietiekay\Desktop\ffn-switcher\CheckForUpdate\bin\Debug\RSS.NET.dll
+C:\Users\bietiekay\Desktop\ffn-switcher\CheckForUpdate\bin\Debug\RSS.NET.pdb
+C:\Users\bietiekay\Desktop\ffn-switcher\CheckForUpdate\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bietiekay\Desktop\ffn-switcher\CheckForUpdate\obj\Debug\CheckForUpdate.exe
+C:\Users\bietiekay\Desktop\ffn-switcher\CheckForUpdate\obj\Debug\CheckForUpdate.pdb
