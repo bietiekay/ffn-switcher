@@ -252,7 +252,7 @@ namespace FFN_Switcher.Processors
 
             while ((waiting < 10) && (!done) )
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitForTeamspeakClientTime));
                 waiting++;
             }
 
@@ -336,7 +336,7 @@ namespace FFN_Switcher.Processors
                     previouslyPaused = true;
                 while ((paused) && (!done))
                 {
-                    Thread.Sleep(1000);
+                    Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitForPausedTeamspeakClient));
                 }
                 if (previouslyPaused)
                     ConsoleOutputLogger.WriteLine("[TS] Teamspeak Client pausiert nicht mehr.");
@@ -400,7 +400,7 @@ namespace FFN_Switcher.Processors
                             }
                         }
                     }
-                    Thread.Sleep(1000);
+                    Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitForTeamspeakClientTime));
                 }
                 whenGatewaywasOffline = DateTime.MinValue;
                 #endregion
@@ -479,7 +479,7 @@ namespace FFN_Switcher.Processors
 
                         while (FFN_Switcher.Properties.Settings.Default.NumberOfChecksIfTeamspeakIsLying > ChecksDone)
                         {
-                            Thread.Sleep(100);
+                            Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitWhenTeamspeakIsLyingAboutVoice));
                             if (TeamspeakChannelFlags.HaveVoice())
                             {
                                 ConsoleOutputLogger.WriteLine("[TS] Teamspeak hat uns angelogen - wir haben doch noch Voice.");
@@ -839,7 +839,7 @@ namespace FFN_Switcher.Processors
                                     ConsoleOutputLogger.WriteLine("[TS] Teamspeak meldet immernoch disconnected...");
                                 }
                                 checkker++;
-                                Thread.Sleep(1000);
+                                Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitBeforeNextTSReconnectTry));
                             }
 
                             if (immernochdisconnected)
@@ -917,7 +917,7 @@ namespace FFN_Switcher.Processors
                 else
                 {
                     #region Connect to Server
-                    Thread.Sleep(1000);
+                    Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitBeforeConnectToTS));
                     goneChannelOnFirstConnect = false;
                     ConsoleOutputLogger.WriteLine("[TS] Verbinde mit " + FFN_Switcher.Properties.Settings.Default.TSServer1_ServerURL);
                     ConsoleOutputLogger.WriteLine("[TS] Warte " + FFN_Switcher.Properties.Settings.Default.WaitForConnectSeconds + " Sekunden auf Teamspeak Client Rückmeldung...");
@@ -934,7 +934,7 @@ namespace FFN_Switcher.Processors
                             ConsoleOutputLogger.WriteLine("[TS] Lange genug auf Channel-Liste gewartet...Verbinde erneut.");
                             break;
                         }
-                        Thread.Sleep(1000);
+                        Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitForChannelList));
                         Counter++;
                     }
 
@@ -980,14 +980,14 @@ namespace FFN_Switcher.Processors
                     else
                     {
                         ConnectedToServerNumber = 0;
-                        ConsoleOutputLogger.WriteLine("[TS] Konnte mit keinem Teamspeak Server verbinden. Warte 5 Minuten und versuche dann nochmal.");
+                        ConsoleOutputLogger.WriteLine("[TS] Konnte mit keinem Teamspeak Server verbinden. Warte "+Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitForReconnectAfterTriedBefore)+" Millisekunden und versuche dann nochmal.");
                         if (!done)
-                            Thread.Sleep(5 * 60 * 1000);
+                            Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.WaitForReconnectAfterTriedBefore));
                     }
                     #endregion
                 }
 
-                Thread.Sleep(500);  // it seems to be important to wait in some cases...
+                Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.TeamspeakUpdateTime));  // it seems to be important to wait in some cases...
             }
 
             beaconProcessor.done = true;

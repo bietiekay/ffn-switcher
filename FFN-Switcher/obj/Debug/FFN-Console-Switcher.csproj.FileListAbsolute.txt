@@ -1,8 +1,0 @@
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\bin\Debug\lizenz.txt
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\bin\Debug\TSRemote.dll
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\bin\Debug\license.rtf
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\bin\Debug\FFN-Switcher.exe
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\bin\Debug\FFN-Switcher.pdb
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\obj\Debug\FFN-Switcher.exe
-C:\Users\bietiekay\Desktop\ffn-switcher\FFN-Switcher\obj\Debug\FFN-Switcher.pdb

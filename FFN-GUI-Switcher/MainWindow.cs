@@ -18,6 +18,7 @@ namespace FFN_Switcher
         public Switcher internalSwitcher;
         delegate void SetStatusCallback(String value);
         private Int32 Counter = 0;
+        private bool dontaskagainquit = false;
 
         public void AddStatusText(String value)
         {
@@ -45,6 +46,10 @@ namespace FFN_Switcher
         {
             InitializeComponent();
             this.Text = "Freies Funknetz Switcher Version " + Version.VersionNumber;
+            if (!FFN_Switcher.Properties.Settings.Default.ExperimentalOptionsEnabled)
+            {
+                SwitcherTabControl.TabPages.Remove(ExperimentalOptionsTab);
+            }
         }
 
         private void informationenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -67,30 +72,12 @@ namespace FFN_Switcher
 
         private void switcherBeendenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (FFN_Switcher.Properties.Settings.Default.AskBeforeQuit)
-            {
-                DialogResult result;
-                result = MessageBox.Show("Soll der Switcher wirklich beendet werden?", "FFN Switcher beenden?", MessageBoxButtons.YesNo);
-
-                if (result == DialogResult.Yes)
-                {
-                    Close();
-                }
-            }
-            else
                 Close();
         }
 
         private void MainWindow_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (einstellungenSpeichernToolStripMenuItem.Enabled)
-            {
-                SaveSettings SaveDialog = new SaveSettings();
-
-                SaveDialog.ShowDialog();
-            }
-
-            Application.Exit();
+                Application.Exit();
         }
 
         private void gatewaybeaconfilebutton_Click(object sender, EventArgs e)
@@ -397,6 +384,40 @@ namespace FFN_Switcher
             {
                 numericUpDown11.Value = internalSwitcher.tsProcessor.lastknownChannelID;
             }
+        }
+
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (FFN_Switcher.Properties.Settings.Default.ExperimentalOptionsEnabled)
+            {
+                if (SwitcherTabControl.TabPages.Contains(ExperimentalOptionsTab))
+                    SwitcherTabControl.TabPages.Remove(ExperimentalOptionsTab);
+            }
+            else
+            {
+                if (!SwitcherTabControl.TabPages.Contains(ExperimentalOptionsTab))
+                    SwitcherTabControl.TabPages.Insert(SwitcherTabControl.TabPages.Count, ExperimentalOptionsTab);
+            }
+        }
+
+        private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (einstellungenSpeichernToolStripMenuItem.Enabled)
+            {
+                SaveSettings SaveDialog = new SaveSettings();
+
+                SaveDialog.ShowDialog();
+            }
+            
+            if (FFN_Switcher.Properties.Settings.Default.AskBeforeQuit)
+            {
+                DialogResult result;
+                result = MessageBox.Show("Soll der Switcher wirklich beendet werden?", "FFN Switcher beenden?", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.No)
+                    e.Cancel=true;
+            }
+
         }
 
     }

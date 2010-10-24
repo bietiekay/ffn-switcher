@@ -1,3 +1,9 @@
+Revision 111:
+* Bugfix "Fragen bevor Beenden"
+* Experimentale Einstellungen können nun aktiviert werden, dann können interne Zeiten beeinflusst werden
+  -> das ganze ist als Experimentiermöglichkeit gedacht um Erfahrungen mit anderen Zeiten zu machen
++ Experimentelle Einstellmöglichkeiten für interne Zeitabläufe
+
 Revision 110:
 * Maximallänge eines Durchlaufs -> Minimalwert nun 5 Minuten statt 0 Minuten
   (es bestand die Gefahr dass versehentlich zu kleine Werte eingestellt werden)

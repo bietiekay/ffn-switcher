@@ -206,6 +206,11 @@ Achtung: CB-Gateways dürfen NUR auf den
 Kanälen 11, 29, 34, 39, 61, 71 und 80 betrieben werden
 </value>
   </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>Millisekunden Abstände verwenden um den Teamspeak Client Status abzufragen (Standard: 500)
+(Warnung: Wenn dies zu niedrig eingestellt wird kann es passieren dass der Rechner nicht mehr 
+                   oder nur noch langsam reagiert)</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

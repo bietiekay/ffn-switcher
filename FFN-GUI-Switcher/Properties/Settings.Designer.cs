@@ -898,5 +898,113 @@ namespace FFN_Switcher.Properties {
                 this["AskBeforeQuit"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public decimal WaitForTeamspeakClientTime {
+            get {
+                return ((decimal)(this["WaitForTeamspeakClientTime"]));
+            }
+            set {
+                this["WaitForTeamspeakClientTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public decimal WaitForPausedTeamspeakClient {
+            get {
+                return ((decimal)(this["WaitForPausedTeamspeakClient"]));
+            }
+            set {
+                this["WaitForPausedTeamspeakClient"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ExperimentalOptionsEnabled {
+            get {
+                return ((bool)(this["ExperimentalOptionsEnabled"]));
+            }
+            set {
+                this["ExperimentalOptionsEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public decimal WaitWhenTeamspeakIsLyingAboutVoice {
+            get {
+                return ((decimal)(this["WaitWhenTeamspeakIsLyingAboutVoice"]));
+            }
+            set {
+                this["WaitWhenTeamspeakIsLyingAboutVoice"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public decimal WaitBeforeNextTSReconnectTry {
+            get {
+                return ((decimal)(this["WaitBeforeNextTSReconnectTry"]));
+            }
+            set {
+                this["WaitBeforeNextTSReconnectTry"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public decimal WaitBeforeConnectToTS {
+            get {
+                return ((decimal)(this["WaitBeforeConnectToTS"]));
+            }
+            set {
+                this["WaitBeforeConnectToTS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public decimal WaitForChannelList {
+            get {
+                return ((decimal)(this["WaitForChannelList"]));
+            }
+            set {
+                this["WaitForChannelList"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300000")]
+        public decimal WaitForReconnectAfterTriedBefore {
+            get {
+                return ((decimal)(this["WaitForReconnectAfterTriedBefore"]));
+            }
+            set {
+                this["WaitForReconnectAfterTriedBefore"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("500")]
+        public decimal TeamspeakUpdateTime {
+            get {
+                return ((decimal)(this["TeamspeakUpdateTime"]));
+            }
+            set {
+                this["TeamspeakUpdateTime"] = value;
+            }
+        }
     }
 }
