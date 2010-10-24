@@ -886,5 +886,17 @@ namespace FFN_Switcher.Properties {
                 this["ReplayGatewayOfflineSeconds"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AskBeforeQuit {
+            get {
+                return ((bool)(this["AskBeforeQuit"]));
+            }
+            set {
+                this["AskBeforeQuit"] = value;
+            }
+        }
     }
 }

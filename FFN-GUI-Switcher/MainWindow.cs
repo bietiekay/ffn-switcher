@@ -67,7 +67,18 @@ namespace FFN_Switcher
 
         private void switcherBeendenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            if (FFN_Switcher.Properties.Settings.Default.AskBeforeQuit)
+            {
+                DialogResult result;
+                result = MessageBox.Show("Soll der Switcher wirklich beendet werden?", "FFN Switcher beenden?", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    Close();
+                }
+            }
+            else
+                Close();
         }
 
         private void MainWindow_FormClosed(object sender, FormClosedEventArgs e)

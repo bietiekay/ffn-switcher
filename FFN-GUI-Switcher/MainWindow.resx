@@ -123,35 +123,6 @@
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>136, 0</value>
   </metadata>
-  <data name="checkBox7.ToolTip" xml:space="preserve">
-    <value>Diese Einstellung gibt an dass der Switcher das
-Gateway nach der oben angegebenen Wartezeit
-wieder zurück in den Gateway Kanal wechseln lässt
-(wenn aktiviert) oder eben für immer die Position
-hält (nicht aktiviert).</value>
-  </data>
-  <data name="numericUpDown8.ToolTip" xml:space="preserve">
-    <value>Für den Fall dass das Gateway in einen anderen
-Kanal verschoben wird legt die hier einstellbare
-Zeit in Minuten fest wie lange die Position gehalten
-wird bevor wieder zurück in den Gateway-Channel 
-zurückgewechselt wird.</value>
-  </data>
-  <data name="checkBox6.ToolTip" xml:space="preserve">
-    <value>Wenn der Switcher in einen anderen Kanal als
-den Gateway Kanal verschoben wird sagt diese
-Einstellung aus dass der Switcher das Gateway
-auf Stumm schaltet für die Zeit bis das Gateway
-wieder zurück in den Gatewaychannel wechselt.
-</value>
-  </data>
-  <data name="label12.ToolTip" xml:space="preserve">
-    <value>Für den Fall dass das Gateway in einen anderen
-Kanal verschoben wird legt die hier einstellbare
-Zeit in Minuten fest wie lange die Position gehalten
-wird bevor wieder zurück in den Gateway-Channel 
-zurückgewechselt wird.</value>
-  </data>
   <data name="label13.ToolTip" xml:space="preserve">
     <value>Häufiger passiert es dass TeamSpeak aus welchen
 Gründen auch immer eine falsche Aussage über seinen

@@ -1,3 +1,11 @@
+Revision 110:
+* Maximallänge eines Durchlaufs -> Minimalwert nun 5 Minuten statt 0 Minuten
+  (es bestand die Gefahr dass versehentlich zu kleine Werte eingestellt werden)
++ Es wird nun vor dem Beenden des Switchers gefragt ob der Switcher wirklich beendet werden soll
+  (dieses neue Verhalten ist abschaltbar in den Allgemeinen Einstellungen)
+* Die Beschreibung "Warte ZZms auf Nachtasten" in allgemeine Einstellungen war verwirrend,
+  wurde geändert auf "Warte ZZms bis Träger abfällt"
+
 Revision 109:
 + Funktion hinzugefügt um die aktuelle ChannelID von Teamspeak zu übernehmen
 * Strafbank deaktiviert

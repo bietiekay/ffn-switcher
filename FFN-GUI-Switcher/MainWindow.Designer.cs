@@ -41,10 +41,6 @@
             this.StatusListBox = new System.Windows.Forms.ListBox();
             this.GatewaySettingsTab = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
@@ -77,6 +73,7 @@
             this.NicknameTextBox = new System.Windows.Forms.TextBox();
             this.GatewayServerSettingsTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -90,6 +87,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -171,14 +169,10 @@
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.MainMenuStrip.SuspendLayout();
             this.SwitcherTabControl.SuspendLayout();
             this.StatusTab.SuspendLayout();
             this.GatewaySettingsTab.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
@@ -311,71 +305,12 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.checkBox7);
-            this.groupBox5.Controls.Add(this.numericUpDown8);
-            this.groupBox5.Controls.Add(this.checkBox6);
-            this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Location = new System.Drawing.Point(8, 213);
+            this.groupBox5.Location = new System.Drawing.Point(8, 220);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(671, 74);
+            this.groupBox5.Size = new System.Drawing.Size(671, 120);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Strafbank - wenn das Gateway in einen anderen Channel verschoben wurde";
-            this.groupBox5.Visible = false;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Checked = global::FFN_Switcher.Properties.Settings.Default.JumpBackToChannelAfterWaitPenaltyMinutes;
-            this.checkBox7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "JumpBackToChannelAfterWaitPenaltyMinutes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox7.Location = new System.Drawing.Point(287, 45);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(355, 17);
-            this.checkBox7.TabIndex = 26;
-            this.checkBox7.Text = "nach der Wartezeit wieder zurück in den Gateway Channel wechseln.";
-            this.ToolTip.SetToolTip(this.checkBox7, resources.GetString("checkBox7.ToolTip"));
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.Visible = false;
-            this.checkBox7.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WaitPenaltyMinutes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown8.Location = new System.Drawing.Point(12, 19);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(37, 20);
-            this.numericUpDown8.TabIndex = 20;
-            this.ToolTip.SetToolTip(this.numericUpDown8, resources.GetString("numericUpDown8.ToolTip"));
-            this.numericUpDown8.Value = global::FFN_Switcher.Properties.Settings.Default.WaitPenaltyMinutes;
-            this.numericUpDown8.Visible = false;
-            this.numericUpDown8.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Checked = global::FFN_Switcher.Properties.Settings.Default.WhenMovedToOtherChannelOutputMute;
-            this.checkBox6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "WhenMovedToOtherChannelOutputMute", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox6.Location = new System.Drawing.Point(11, 45);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(270, 17);
-            this.checkBox6.TabIndex = 23;
-            this.checkBox6.Text = "Gateway stummschalten wenn verschoben worden.";
-            this.ToolTip.SetToolTip(this.checkBox6, resources.GetString("checkBox6.ToolTip"));
-            this.checkBox6.UseVisualStyleBackColor = true;
-            this.checkBox6.Visible = false;
-            this.checkBox6.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(55, 21);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(420, 13);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Minuten die Position halten wenn Gateway in einen andern Channel verschoben wurde" +
-                ".";
-            this.ToolTip.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
-            this.label12.Visible = false;
+            this.groupBox5.Text = "allgemeine Switcher Einstellungen";
             // 
             // groupBox4
             // 
@@ -398,7 +333,7 @@
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Location = new System.Drawing.Point(8, 87);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(671, 120);
+            this.groupBox4.Size = new System.Drawing.Size(671, 127);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "TimeOuts und Channel Verhalten";
@@ -492,6 +427,11 @@
             // 
             this.numericUpDown6.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WatchdogMinutes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.numericUpDown6.Location = new System.Drawing.Point(556, 40);
+            this.numericUpDown6.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(37, 20);
             this.numericUpDown6.TabIndex = 13;
@@ -513,9 +453,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(115, 42);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(150, 13);
+            this.label7.Size = new System.Drawing.Size(88, 13);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Millisekunden auf Nachtasten.";
+            this.label7.Text = "bis Träger abfällt.";
             // 
             // numericUpDown5
             // 
@@ -775,6 +715,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Server Verbindung 2";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(161, 94);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(158, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Channel ID übernehmen";
+            this.ToolTip.SetToolTip(this.button2, "Bei einem Click auf diesen Button wird die Channel ID des Channels übernommen in " +
+                    "welchem sich gerade der Switcher befindet.");
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
@@ -934,6 +886,18 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Server Verbindung 1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(161, 94);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Channel ID übernehmen";
+            this.ToolTip.SetToolTip(this.button1, "Bei einem Click auf diesen Button wird die Channel ID des Channels übernommen in " +
+                    "welchem sich gerade der Switcher befindet.");
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox9
             // 
@@ -1939,30 +1903,6 @@
             // 
             this.ToolTip.IsBalloon = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(161, 94);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Channel ID übernehmen";
-            this.ToolTip.SetToolTip(this.button1, "Bei einem Click auf diesen Button wird die Channel ID des Channels übernommen in " +
-                    "welchem sich gerade der Switcher befindet.");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(161, 94);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Channel ID übernehmen";
-            this.ToolTip.SetToolTip(this.button2, "Bei einem Click auf diesen Button wird die Channel ID des Channels übernommen in " +
-                    "welchem sich gerade der Switcher befindet.");
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1984,9 +1924,6 @@
             this.SwitcherTabControl.ResumeLayout(false);
             this.StatusTab.ResumeLayout(false);
             this.GatewaySettingsTab.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
@@ -2066,14 +2003,9 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
         private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.TabPage GatewayServerSettingsTab;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -2175,6 +2107,7 @@
         private System.Windows.Forms.CheckBox checkBox25;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
 
