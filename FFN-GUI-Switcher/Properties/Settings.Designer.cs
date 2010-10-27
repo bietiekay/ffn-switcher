@@ -1006,5 +1006,29 @@ namespace FFN_Switcher.Properties {
                 this["TeamspeakUpdateTime"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MuteGatewayAfterTalking {
+            get {
+                return ((bool)(this["MuteGatewayAfterTalking"]));
+            }
+            set {
+                this["MuteGatewayAfterTalking"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300")]
+        public decimal MuteGatewayAfterTalkingTime {
+            get {
+                return ((decimal)(this["MuteGatewayAfterTalkingTime"]));
+            }
+            set {
+                this["MuteGatewayAfterTalkingTime"] = value;
+            }
+        }
     }
 }

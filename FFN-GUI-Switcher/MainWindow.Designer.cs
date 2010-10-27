@@ -113,15 +113,19 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.ExperimentalOptionsTab = new System.Windows.Forms.TabPage();
-            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.checkBox26 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
+            this.label49 = new System.Windows.Forms.Label();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
@@ -178,7 +182,9 @@
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.ipAddressControl1 = new IPAddressControlLib.IPAddressControl();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
@@ -186,9 +192,6 @@
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
-            this.label48 = new System.Windows.Forms.Label();
-            this.ipAddressControl1 = new IPAddressControlLib.IPAddressControl();
             this.MainMenuStrip.SuspendLayout();
             this.SwitcherTabControl.SuspendLayout();
             this.StatusTab.SuspendLayout();
@@ -210,6 +213,7 @@
             this.groupBox6.SuspendLayout();
             this.ExperimentalOptionsTab.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -224,6 +228,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
@@ -231,7 +236,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenuStrip
@@ -339,15 +343,18 @@
             // 
             this.groupBox5.Controls.Add(this.checkBox7);
             this.groupBox5.Controls.Add(this.checkBox6);
-            this.groupBox5.Location = new System.Drawing.Point(8, 220);
+            this.groupBox5.Location = new System.Drawing.Point(8, 249);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(671, 120);
+            this.groupBox5.Size = new System.Drawing.Size(671, 91);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "allgemeine Switcher Einstellungen";
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.numericUpDown24);
+            this.groupBox4.Controls.Add(this.checkBox26);
+            this.groupBox4.Controls.Add(this.label49);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.numericUpDown9);
             this.groupBox4.Controls.Add(this.checkBox5);
@@ -367,7 +374,7 @@
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Location = new System.Drawing.Point(8, 87);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(671, 127);
+            this.groupBox4.Size = new System.Drawing.Size(671, 156);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "TimeOuts und Channel Verhalten";
@@ -1166,10 +1173,6 @@
             this.ExperimentalOptionsTab.Text = "Experimentell";
             this.ExperimentalOptionsTab.UseVisualStyleBackColor = true;
             // 
-            // ToolTip
-            // 
-            this.ToolTip.IsBalloon = true;
-            // 
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.numericUpDown23);
@@ -1195,6 +1198,65 @@
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Zeitsteuerungen";
             // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(88, 99);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(459, 13);
+            this.label45.TabIndex = 1;
+            this.label45.Text = "Millisekunden warten bevor ein Connect Versuch zum TS Server versucht wird (Stand" +
+                "ard: 1000)";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(88, 175);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(474, 26);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "Millisekunden warten bevor ein erneuter Connect Versuch unternommen ist nachdem a" +
+                "lle Versuche\r\ngescheitert sind (Standard: 300000)";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(88, 209);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(466, 39);
+            this.label48.TabIndex = 1;
+            this.label48.Text = resources.GetString("label48.Text");
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(88, 151);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(447, 13);
+            this.label46.TabIndex = 1;
+            this.label46.Text = "Millisekunden nach dem erfolgreichen Connect auf die Channel Liste warten (Standa" +
+                "rd: 1000)";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(88, 125);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(514, 13);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Millisekunden warten bevor ein erneuter Reconnect Versuch zum TS Server versucht " +
+                "wird (Standard: 1000)";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(88, 73);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(470, 13);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "Millisekunden warten wenn Teamspeak den Switcher bzgl. des Voice Flags belügt (St" +
+                "andard: 100)";
+            // 
             // label42
             // 
             this.label42.AutoSize = true;
@@ -1213,55 +1275,44 @@
             this.label12.TabIndex = 1;
             this.label12.Text = "Millisekunden auf den Start des Teamspeak Clients warten. (Standard: 1000)";
             // 
-            // label43
+            // ToolTip
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(88, 73);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(470, 13);
-            this.label43.TabIndex = 1;
-            this.label43.Text = "Millisekunden warten wenn Teamspeak den Switcher bzgl. des Voice Flags belügt (St" +
-                "andard: 100)";
+            this.ToolTip.IsBalloon = true;
             // 
-            // label44
+            // checkBox26
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(88, 125);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(514, 13);
-            this.label44.TabIndex = 1;
-            this.label44.Text = "Millisekunden warten bevor ein erneuter Reconnect Versuch zum TS Server versucht " +
-                "wird (Standard: 1000)";
+            this.checkBox26.AutoSize = true;
+            this.checkBox26.Checked = global::FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalking;
+            this.checkBox26.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "MuteGatewayAfterTalking", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox26.Location = new System.Drawing.Point(7, 116);
+            this.checkBox26.Name = "checkBox26";
+            this.checkBox26.Size = new System.Drawing.Size(83, 17);
+            this.checkBox26.TabIndex = 26;
+            this.checkBox26.Text = "Gateway für";
+            this.checkBox26.UseVisualStyleBackColor = true;
             // 
-            // label45
+            // numericUpDown24
             // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(88, 99);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(459, 13);
-            this.label45.TabIndex = 1;
-            this.label45.Text = "Millisekunden warten bevor ein Connect Versuch zum TS Server versucht wird (Stand" +
-                "ard: 1000)";
+            this.numericUpDown24.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "MuteGatewayAfterTalkingTime", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown24.Location = new System.Drawing.Point(96, 115);
+            this.numericUpDown24.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown24.Name = "numericUpDown24";
+            this.numericUpDown24.Size = new System.Drawing.Size(44, 20);
+            this.numericUpDown24.TabIndex = 27;
+            this.numericUpDown24.Value = global::FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalkingTime;
             // 
-            // label46
+            // label49
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(88, 151);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(447, 13);
-            this.label46.TabIndex = 1;
-            this.label46.Text = "Millisekunden nach dem erfolgreichen Connect auf die Channel Liste warten (Standa" +
-                "rd: 1000)";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(88, 175);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(474, 26);
-            this.label47.TabIndex = 1;
-            this.label47.Text = "Millisekunden warten bevor ein erneuter Connect Versuch unternommen ist nachdem a" +
-                "lle Versuche\r\ngescheitert sind (Standard: 300000)";
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(146, 117);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(376, 13);
+            this.label49.TabIndex = 25;
+            this.label49.Text = "Millisekunden stumm schalten nachdem im Gateway Kanal gesprochen wurde.";
             // 
             // checkBox7
             // 
@@ -2025,6 +2076,25 @@
                     "er des internen\r\nWebservers befinden.");
             this.textBox10.TextChanged += new System.EventHandler(this.enableSaveSettings);
             // 
+            // ipAddressControl1
+            // 
+            this.ipAddressControl1.AllowInternalTab = false;
+            this.ipAddressControl1.AutoHeight = true;
+            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
+            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ipAddressControl1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "WebserverListeningIP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ipAddressControl1.Location = new System.Drawing.Point(136, 19);
+            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(87, 20);
+            this.ipAddressControl1.Name = "ipAddressControl1";
+            this.ipAddressControl1.ReadOnly = false;
+            this.ipAddressControl1.Size = new System.Drawing.Size(87, 20);
+            this.ipAddressControl1.TabIndex = 13;
+            this.ipAddressControl1.Text = global::FFN_Switcher.Properties.Settings.Default.WebserverListeningIP;
+            this.ToolTip.SetToolTip(this.ipAddressControl1, "Hier soll die IP Adresse eingegeben werden unter\r\nder der interne Webserver errei" +
+                    "chbar sein soll. Im \r\nNormalfall ist dies 127.0.0.1 (localhost).");
+            this.ipAddressControl1.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // numericUpDown12
             // 
             this.numericUpDown12.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WebserverTCPPort", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -2046,6 +2116,25 @@
                     "sein\r\nsoll.");
             this.numericUpDown12.Value = global::FFN_Switcher.Properties.Settings.Default.WebserverTCPPort;
             this.numericUpDown12.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // numericUpDown23
+            // 
+            this.numericUpDown23.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "TeamspeakUpdateTime", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown23.Location = new System.Drawing.Point(6, 207);
+            this.numericUpDown23.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown23.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.numericUpDown23.Name = "numericUpDown23";
+            this.numericUpDown23.Size = new System.Drawing.Size(76, 20);
+            this.numericUpDown23.TabIndex = 8;
+            this.numericUpDown23.Value = global::FFN_Switcher.Properties.Settings.Default.TeamspeakUpdateTime;
             // 
             // numericUpDown22
             // 
@@ -2170,53 +2259,6 @@
             this.numericUpDown8.TabIndex = 0;
             this.numericUpDown8.Value = global::FFN_Switcher.Properties.Settings.Default.WaitForTeamspeakClientTime;
             // 
-            // numericUpDown23
-            // 
-            this.numericUpDown23.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "TeamspeakUpdateTime", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown23.Location = new System.Drawing.Point(6, 207);
-            this.numericUpDown23.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown23.Minimum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.numericUpDown23.Name = "numericUpDown23";
-            this.numericUpDown23.Size = new System.Drawing.Size(76, 20);
-            this.numericUpDown23.TabIndex = 8;
-            this.numericUpDown23.Value = global::FFN_Switcher.Properties.Settings.Default.TeamspeakUpdateTime;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(88, 209);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(466, 39);
-            this.label48.TabIndex = 1;
-            this.label48.Text = resources.GetString("label48.Text");
-            // 
-            // ipAddressControl1
-            // 
-            this.ipAddressControl1.AllowInternalTab = false;
-            this.ipAddressControl1.AutoHeight = true;
-            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "WebserverListeningIP", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.ipAddressControl1.Location = new System.Drawing.Point(136, 19);
-            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(87, 20);
-            this.ipAddressControl1.Name = "ipAddressControl1";
-            this.ipAddressControl1.ReadOnly = false;
-            this.ipAddressControl1.Size = new System.Drawing.Size(87, 20);
-            this.ipAddressControl1.TabIndex = 13;
-            this.ipAddressControl1.Text = global::FFN_Switcher.Properties.Settings.Default.WebserverListeningIP;
-            this.ToolTip.SetToolTip(this.ipAddressControl1, "Hier soll die IP Adresse eingegeben werden unter\r\nder der interne Webserver errei" +
-                    "chbar sein soll. Im \r\nNormalfall ist dies 127.0.0.1 (localhost).");
-            this.ipAddressControl1.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2268,6 +2310,7 @@
             this.ExperimentalOptionsTab.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
@@ -2282,6 +2325,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
@@ -2289,7 +2333,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2456,6 +2499,9 @@
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.NumericUpDown numericUpDown23;
         private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.NumericUpDown numericUpDown24;
+        private System.Windows.Forms.CheckBox checkBox26;
+        private System.Windows.Forms.Label label49;
     }
 }
 

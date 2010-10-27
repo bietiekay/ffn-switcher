@@ -1,3 +1,7 @@
+Revision 112:
++ Automatische Stummschaltung für definierbare Anzahl Millisekunden nachdem das Gateway gesprochen hat um Nachtasten zu verhindern.
++ wenn der Durchgang zu lang ist wird das entsprechend im Log vermerkt
+
 Revision 111:
 * Bugfix "Fragen bevor Beenden"
 * Experimentale Einstellungen können nun aktiviert werden, dann können interne Zeiten beeinflusst werden

@@ -692,6 +692,7 @@ namespace FFN_Switcher.Processors
                                     {
                                         // when the gateway talked for too long...
                                         // TODO...
+                                        ConsoleOutputLogger.WriteLine("[TS] Gateway spricht zu lange...was soll ich tun?");
                                     }
                                 }
                                 else
@@ -763,6 +764,16 @@ namespace FFN_Switcher.Processors
                                             if (FFN_Switcher.Properties.Settings.Default.PlayRogerBeep)
                                                 beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.RogerBeepFile);
                                             serialportProcessor.SwitchOff();
+
+                                            // eventuell sollen wir das gateway um nachtasten zu verhindern nach einem durchgang kurz stumm schalten?
+                                            if (FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalking)
+                                            {
+                                                ConsoleOutputLogger.WriteLine("[TS] Gateway wird für " + FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalkingTime + " Millisekunden stumm geschaltet");
+                                                // Mute it!
+                                                TeamspeakFlags.OutputMuted = true;
+                                                Thread.Sleep(Convert.ToInt32(FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalkingTime));
+                                                TeamspeakFlags.OutputMuted = false;
+                                            }
 
                                             ConsoleOutputLogger.WriteLine("[TS] Gateway wieder freigegeben.");
                                         }

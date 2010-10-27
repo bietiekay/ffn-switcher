@@ -248,5 +248,11 @@
     <Setting Name="TeamspeakUpdateTime" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">500</Value>
     </Setting>
+    <Setting Name="MuteGatewayAfterTalking" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MuteGatewayAfterTalkingTime" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
