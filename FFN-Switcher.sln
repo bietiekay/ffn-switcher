@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GUI", "GUI", "{71366923-9290-499A-9D48-F4AF8011FC2D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CLI", "CLI", "{A5C29E2E-F084-4D94-9452-476847A90445}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Changelog", "Changelog", "{FD5BACD3-4326-436B-BFC8-E4C4C0BAA9B0}"
 	ProjectSection(SolutionItems) = preProject
 		changelog.txt = changelog.txt
 		FFN-GUI-Switcher\knownbugs.txt = FFN-GUI-Switcher\knownbugs.txt
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFN-Console-Switcher", "FFN-Switcher\FFN-Console-Switcher.csproj", "{35F21943-0AB5-4C5F-9C12-24D42F12023C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFN-GUI-Switcher", "FFN-GUI-Switcher\FFN-GUI-Switcher.csproj", "{7B1DA8AE-1343-4B16-AED5-657AC98DA989}"
 EndProject
@@ -21,20 +17,12 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FFN-Switcher Setup", "FFN-S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSS.NET", "FFN-GUI-Switcher\RSS.NET\RSS.NET.csproj", "{C42FC014-7E12-4FAF-9BC9-79BF1529440D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateUpdateXML", "TestVersionUpdate\CreateUpdateXML.csproj", "{6D891BCC-5F71-419C-9283-8C76515382E4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckForUpdate", "CheckForUpdate\CheckForUpdate.csproj", "{A779CD4D-910E-47A0-B16D-5CA2F8A66FA0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{35F21943-0AB5-4C5F-9C12-24D42F12023C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35F21943-0AB5-4C5F-9C12-24D42F12023C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35F21943-0AB5-4C5F-9C12-24D42F12023C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35F21943-0AB5-4C5F-9C12-24D42F12023C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B1DA8AE-1343-4B16-AED5-657AC98DA989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B1DA8AE-1343-4B16-AED5-657AC98DA989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B1DA8AE-1343-4B16-AED5-657AC98DA989}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,14 +37,6 @@ Global
 		{C42FC014-7E12-4FAF-9BC9-79BF1529440D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C42FC014-7E12-4FAF-9BC9-79BF1529440D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C42FC014-7E12-4FAF-9BC9-79BF1529440D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6D891BCC-5F71-419C-9283-8C76515382E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6D891BCC-5F71-419C-9283-8C76515382E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6D891BCC-5F71-419C-9283-8C76515382E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6D891BCC-5F71-419C-9283-8C76515382E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A779CD4D-910E-47A0-B16D-5CA2F8A66FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A779CD4D-910E-47A0-B16D-5CA2F8A66FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A779CD4D-910E-47A0-B16D-5CA2F8A66FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A779CD4D-910E-47A0-B16D-5CA2F8A66FA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +46,5 @@ Global
 		{259C297E-A054-4EB4-88A3-8BB1F37506C5} = {71366923-9290-499A-9D48-F4AF8011FC2D}
 		{574C2802-5C27-4DD0-A979-BFB159FF7CA3} = {71366923-9290-499A-9D48-F4AF8011FC2D}
 		{C42FC014-7E12-4FAF-9BC9-79BF1529440D} = {71366923-9290-499A-9D48-F4AF8011FC2D}
-		{35F21943-0AB5-4C5F-9C12-24D42F12023C} = {A5C29E2E-F084-4D94-9452-476847A90445}
 	EndGlobalSection
 EndGlobal
