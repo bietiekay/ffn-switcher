@@ -168,22 +168,6 @@ des Gateways solange noch auf Sendung bis diese Angabe in
 Millisekunden vorbei ist, erst dann lässt das Gateway den Träger
 abfallen.</value>
   </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value>Hier trägst die Kennung deines Gateways ein die für dich gültig ist
-zb:  
-044 &lt; Gatewaynummer wird dir bei der Registrierung auf dem Server mitgeteilt
-Bamberg &lt; Standort deines Gateways oder Wohnort von dir
-Ofr &lt; Regierungsbezirk deines Standortes
-CB   PMR &lt; Sendefrequenz des Gateways
-CH 5 &lt; Kanalbenutzung
-Achtung: CB-Gateways dürfen NUR auf den 
-Kanälen 11, 29, 34, 39, 61, 71 und 80 betrieben werden</value>
-  </data>
-  <data name="label48.Text" xml:space="preserve">
-    <value>Millisekunden Abstände verwenden um den Teamspeak Client Status abzufragen (Standard: 500)
-(Warnung: Wenn dies zu niedrig eingestellt wird kann es passieren dass der Rechner nicht mehr 
-                   oder nur noch langsam reagiert)</value>
-  </data>
   <data name="checkBox3.ToolTip" xml:space="preserve">
     <value>wenn ein Haken im Kästchen sichtbar ist verwendest
 du Standard RTS - so nennt man die Belegung des 
@@ -199,6 +183,17 @@ ob serielle (Comportsteuerung/Schaltimpuls damit Funkgerät
 sendet) oder Voice Activation (wird rein durch Sprache oder 
 Geräusche aktiviert)</value>
   </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value>Hier trägst die Kennung deines Gateways ein die für dich gültig ist
+zb:  
+044 &lt; Gatewaynummer wird dir bei der Registrierung auf dem Server mitgeteilt
+Bamberg &lt; Standort deines Gateways oder Wohnort von dir
+Ofr &lt; Regierungsbezirk deines Standortes
+CB   PMR &lt; Sendefrequenz des Gateways
+CH 5 &lt; Kanalbenutzung
+Achtung: CB-Gateways dürfen NUR auf den 
+Kanälen 11, 29, 34, 39, 61, 71 und 80 betrieben werden</value>
+  </data>
   <data name="NicknameTextBox.ToolTip" xml:space="preserve">
     <value>Hier trägst die Kennung deines Gateways ein die für dich gültig ist
 zb:  
@@ -210,6 +205,11 @@ CH 5 &lt; Kanalbenutzung
 Achtung: CB-Gateways dürfen NUR auf den 
 Kanälen 11, 29, 34, 39, 61, 71 und 80 betrieben werden
 </value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>Millisekunden Abstände verwenden um den Teamspeak Client Status abzufragen (Standard: 500)
+(Warnung: Wenn dies zu niedrig eingestellt wird kann es passieren dass der Rechner nicht mehr 
+                   oder nur noch langsam reagiert)</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

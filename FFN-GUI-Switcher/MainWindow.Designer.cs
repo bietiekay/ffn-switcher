@@ -41,43 +41,78 @@
             this.StatusListBox = new System.Windows.Forms.ListBox();
             this.GatewaySettingsTab = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox26 = new System.Windows.Forms.CheckBox();
+            this.label49 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.allgemeineGatewayEinstellungen = new System.Windows.Forms.GroupBox();
             this.label39 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.NicknameTextBox = new System.Windows.Forms.TextBox();
             this.GatewayServerSettingsTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.BeaconSettingsTab = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label41 = new System.Windows.Forms.Label();
             this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
             this.checkBox25 = new System.Windows.Forms.CheckBox();
             this.label40 = new System.Windows.Forms.Label();
+            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.offline_playbutton = new System.Windows.Forms.Button();
             this.rogerbeep_playbutton = new System.Windows.Forms.Button();
             this.deaktiviert_playbutton = new System.Windows.Forms.Button();
@@ -88,32 +123,65 @@
             this.gatewaydisabledfilebutton = new System.Windows.Forms.Button();
             this.disconnectfilebutton = new System.Windows.Forms.Button();
             this.connectfilebutton = new System.Windows.Forms.Button();
+            this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.label38 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.checkBox22 = new System.Windows.Forms.CheckBox();
             this.label37 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
             this.label36 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.checkBox20 = new System.Windows.Forms.CheckBox();
             this.label35 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.label34 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.beacon_playbutton = new System.Windows.Forms.Button();
             this.beacongatewayfilebutton = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
+            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
             this.label33 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
+            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.label29 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.TeamspeakTab = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.sprechpauseMessage = new System.Windows.Forms.CheckBox();
             this.logfilebutton = new System.Windows.Forms.Button();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.teamspeakclientfilebutton = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.ipAddressControl1 = new IPAddressControlLib.IPAddressControl();
+            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
             this.ExperimentalOptionsTab = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.label45 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -122,97 +190,14 @@
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
-            this.label49 = new System.Windows.Forms.Label();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.NicknameTextBox = new System.Windows.Forms.TextBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.sprechpauseMessage = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.ipAddressControl1 = new IPAddressControlLib.IPAddressControl();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.MainMenuStrip.SuspendLayout();
             this.SwitcherTabControl.SuspendLayout();
             this.StatusTab.SuspendLayout();
             this.GatewaySettingsTab.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.allgemeineGatewayEinstellungen.SuspendLayout();
-            this.GatewayServerSettingsTab.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.BeaconSettingsTab.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
-            this.groupBox9.SuspendLayout();
-            this.TeamspeakTab.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.ExperimentalOptionsTab.SuspendLayout();
-            this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
@@ -220,14 +205,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.allgemeineGatewayEinstellungen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.GatewayServerSettingsTab.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            this.BeaconSettingsTab.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
+            this.TeamspeakTab.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            this.ExperimentalOptionsTab.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
@@ -350,6 +350,32 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "allgemeine Switcher Einstellungen";
             // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Checked = global::FFN_Switcher.Properties.Settings.Default.ExperimentalOptionsEnabled;
+            this.checkBox7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "ExperimentalOptionsEnabled", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox7.Location = new System.Drawing.Point(6, 43);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(368, 17);
+            this.checkBox7.TabIndex = 1;
+            this.checkBox7.Text = "Experimentelle Einstellungen freischalten (Warnung: Auf eigene Gefahr !)";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.ExperimentalOptions_CheckedChanged);
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Checked = global::FFN_Switcher.Properties.Settings.Default.AskBeforeQuit;
+            this.checkBox6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "AskBeforeQuit", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox6.Location = new System.Drawing.Point(6, 19);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(275, 17);
+            this.checkBox6.TabIndex = 0;
+            this.checkBox6.Text = "noch einmal fragen bevor der Switcher beendet wird.";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.numericUpDown24);
@@ -379,6 +405,41 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "TimeOuts und Channel Verhalten";
             // 
+            // numericUpDown24
+            // 
+            this.numericUpDown24.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "MuteGatewayAfterTalkingTime", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown24.Location = new System.Drawing.Point(96, 115);
+            this.numericUpDown24.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown24.Name = "numericUpDown24";
+            this.numericUpDown24.Size = new System.Drawing.Size(44, 20);
+            this.numericUpDown24.TabIndex = 27;
+            this.numericUpDown24.Value = global::FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalkingTime;
+            // 
+            // checkBox26
+            // 
+            this.checkBox26.AutoSize = true;
+            this.checkBox26.Checked = global::FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalking;
+            this.checkBox26.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "MuteGatewayAfterTalking", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox26.Location = new System.Drawing.Point(7, 116);
+            this.checkBox26.Name = "checkBox26";
+            this.checkBox26.Size = new System.Drawing.Size(83, 17);
+            this.checkBox26.TabIndex = 26;
+            this.checkBox26.Text = "Gateway für";
+            this.checkBox26.UseVisualStyleBackColor = true;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(146, 117);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(376, 13);
+            this.label49.TabIndex = 25;
+            this.label49.Text = "Millisekunden stumm schalten nachdem im Gateway Kanal gesprochen wurde.";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -388,6 +449,34 @@
             this.label13.TabIndex = 25;
             this.label13.Text = "mal überprüfen ob Teamspeak den Switcher anlügt oder nicht.";
             this.ToolTip.SetToolTip(this.label13, resources.GetString("label13.ToolTip"));
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "NumberOfChecksIfTeamspeakIsLying", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown9.Location = new System.Drawing.Point(310, 91);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown9.TabIndex = 24;
+            this.ToolTip.SetToolTip(this.numericUpDown9, resources.GetString("numericUpDown9.ToolTip"));
+            this.numericUpDown9.Value = global::FFN_Switcher.Properties.Settings.Default.NumberOfChecksIfTeamspeakIsLying;
+            this.numericUpDown9.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Checked = global::FFN_Switcher.Properties.Settings.Default.FlagChannelCommanderWhenSending;
+            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "FlagChannelCommanderWhenSending", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox5.Location = new System.Drawing.Point(6, 92);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(293, 17);
+            this.checkBox5.TabIndex = 22;
+            this.checkBox5.Text = "Channel Commander Flag setzen wenn Gateway sendet.";
+            this.ToolTip.SetToolTip(this.checkBox5, "Channel Commander Flag bedeutet wenn das Gateway\r\nsendet und Spache dabei übertra" +
+                    "gen wird leuchtet die \r\n(sonst grüne Lampe) nun ROT auf und signalisiert den\r\nak" +
+                    "tiven Betrieb des Gateways.\r\n");
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label11
             // 
@@ -399,6 +488,34 @@
             this.label11.Text = "Sekunden warten bevor ein Reconnect versucht wird.";
             this.ToolTip.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
+            // numericUpDown7
+            // 
+            this.numericUpDown7.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "AutoReconnectSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown7.Location = new System.Drawing.Point(288, 65);
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown7.TabIndex = 17;
+            this.ToolTip.SetToolTip(this.numericUpDown7, resources.GetString("numericUpDown7.ToolTip"));
+            this.numericUpDown7.Value = global::FFN_Switcher.Properties.Settings.Default.AutoReconnectSeconds;
+            this.numericUpDown7.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Checked = global::FFN_Switcher.Properties.Settings.Default.AutoReconnect;
+            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "AutoReconnect", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox4.Location = new System.Drawing.Point(6, 66);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(275, 17);
+            this.checkBox4.TabIndex = 16;
+            this.checkBox4.Text = "bei Verbindungsabbruch automatisch neu verbinden.";
+            this.ToolTip.SetToolTip(this.checkBox4, "ein Haken im Kästchen bedeutet AKTIV:\r\nalso wird bei Verlust der Internetverbindu" +
+                    "ng\r\nsolange versucht eine Verbindung wieder\r\nherzustellen bis die Verbindung wie" +
+                    "der\r\nerfolgreich hergestellt wurde.\r\n");
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -407,6 +524,22 @@
             this.label9.Size = new System.Drawing.Size(48, 13);
             this.label9.TabIndex = 15;
             this.label9.Text = "Minuten.";
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WatchdogMinutes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown6.Location = new System.Drawing.Point(556, 40);
+            this.numericUpDown6.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown6.TabIndex = 13;
+            this.ToolTip.SetToolTip(this.numericUpDown6, resources.GetString("numericUpDown6.ToolTip"));
+            this.numericUpDown6.Value = global::FFN_Switcher.Properties.Settings.Default.WatchdogMinutes;
+            this.numericUpDown6.ValueChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label10
             // 
@@ -426,6 +559,22 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "bis Träger abfällt.";
             // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "DelayAfterSendingMilliSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown5.Location = new System.Drawing.Point(51, 40);
+            this.numericUpDown5.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDown5.TabIndex = 10;
+            this.ToolTip.SetToolTip(this.numericUpDown5, resources.GetString("numericUpDown5.ToolTip"));
+            this.numericUpDown5.Value = global::FFN_Switcher.Properties.Settings.Default.DelayAfterSendingMilliSeconds;
+            this.numericUpDown5.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -444,6 +593,18 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Sekunden.";
             // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "DelaySeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown4.Location = new System.Drawing.Point(556, 14);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(37, 20);
+            this.numericUpDown4.TabIndex = 7;
+            this.ToolTip.SetToolTip(this.numericUpDown4, "Der hier definierte Wert ist sozusagen die unterste Grenze\r\ndie ein Durchgang max" +
+                    "imal von der Länge haben sollte.");
+            this.numericUpDown4.Value = global::FFN_Switcher.Properties.Settings.Default.DelaySeconds;
+            this.numericUpDown4.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -452,6 +613,18 @@
             this.label4.Size = new System.Drawing.Size(162, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Mindestlänge eines Durchgangs:";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "UseServer2AfterNumberOfFailedReconnects", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown2.Location = new System.Drawing.Point(288, 14);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDown2.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.numericUpDown2, "Nach dieser Menge an gescheiterten Verbindungsversuchen\r\nverwendet der Switcher a" +
+                    "utomatisch den Alternativen Server 2.");
+            this.numericUpDown2.Value = global::FFN_Switcher.Properties.Settings.Default.UseServer2AfterNumberOfFailedReconnects;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label3
             // 
@@ -475,6 +648,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Serielle Schnittstelle";
             // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "Comport", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown3.Location = new System.Drawing.Point(140, 42);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(41, 20);
+            this.numericUpDown3.TabIndex = 5;
+            this.ToolTip.SetToolTip(this.numericUpDown3, "Im Computer gibt es je nach Ausstatung mehrere serielle\r\nSchnittstellen auch COM " +
+                    "Port genannt.\r\nHier musst du nun den auswählen an den dein\r\nComportkabel angesch" +
+                    "lossen wurde.");
+            this.numericUpDown3.Value = global::FFN_Switcher.Properties.Settings.Default.Comport;
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -486,6 +672,35 @@
             this.ToolTip.SetToolTip(this.label5, "Im Computer gibt es je nach Ausstatung mehrere serielle\r\nSchnittstellenauch COM P" +
                     "ort genannt.\r\nHier musst du nun den auswählen an den dein\r\nComportkabel angeschl" +
                     "ossen wurde.");
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Checked = global::FFN_Switcher.Properties.Settings.Default.RTS;
+            this.checkBox3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "RTS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox3.Location = new System.Drawing.Point(187, 12);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(110, 30);
+            this.checkBox3.TabIndex = 4;
+            this.checkBox3.Text = "verwendet RTS\r\n(deaktiviert=DTR)\r\n";
+            this.ToolTip.SetToolTip(this.checkBox3, resources.GetString("checkBox3.ToolTip"));
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Checked = global::FFN_Switcher.Properties.Settings.Default.ComportEnabled;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "ComportEnabled", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox2.Location = new System.Drawing.Point(6, 19);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(160, 17);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "Serielle Schnittstelle aktiviert";
+            this.ToolTip.SetToolTip(this.checkBox2, resources.GetString("checkBox2.ToolTip"));
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // allgemeineGatewayEinstellungen
             // 
@@ -511,6 +726,33 @@
             this.label39.TabIndex = 5;
             this.label39.Text = "Sekunden.";
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WaitForConnectSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown1.Location = new System.Drawing.Point(197, 43);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(65, 20);
+            this.numericUpDown1.TabIndex = 3;
+            this.ToolTip.SetToolTip(this.numericUpDown1, "Diese Zeit in Sekunden gibt an wie lange der\r\nSwitcher auf eine erfolgreiche Verb" +
+                    "indung mit\r\ndem Teamspeak Server wartet.");
+            this.numericUpDown1.Value = global::FFN_Switcher.Properties.Settings.Default.WaitForConnectSeconds;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = global::FFN_Switcher.Properties.Settings.Default.GatewayActivated;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "GatewayActivated", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(121, 17);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "Gateway ist aktiviert";
+            this.ToolTip.SetToolTip(this.checkBox1, "Hiermit wird sichergestellt das das Gateway\r\nin Betriebszustand geschaltet ist.");
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -529,6 +771,18 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Kennung:";
             this.ToolTip.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
+            // 
+            // NicknameTextBox
+            // 
+            this.NicknameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "Nickname", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.NicknameTextBox.Location = new System.Drawing.Point(197, 17);
+            this.NicknameTextBox.MaxLength = 128;
+            this.NicknameTextBox.Name = "NicknameTextBox";
+            this.NicknameTextBox.Size = new System.Drawing.Size(156, 20);
+            this.NicknameTextBox.TabIndex = 0;
+            this.NicknameTextBox.Text = global::FFN_Switcher.Properties.Settings.Default.Nickname;
+            this.ToolTip.SetToolTip(this.NicknameTextBox, resources.GetString("NicknameTextBox.ToolTip"));
+            this.NicknameTextBox.TextChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // GatewayServerSettingsTab
             // 
@@ -573,7 +827,37 @@
             this.ToolTip.SetToolTip(this.button2, "Bei einem Click auf diesen Button wird die Channel ID des Channels übernommen in " +
                     "welchem sich gerade der Switcher befindet.");
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.ApplyChannelID_ServerConnection_1_Click);
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer2_AlwaysChannelCommander;
+            this.checkBox10.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_AlwaysChannelCommander", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox10.Location = new System.Drawing.Point(90, 172);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(154, 17);
+            this.checkBox10.TabIndex = 26;
+            this.checkBox10.Text = "immer Channel Commander";
+            this.ToolTip.SetToolTip(this.checkBox10, "wenn aktiviert wird das Gateway immer\r\nals Channel-Commander eingeloggt\r\nsein.");
+            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer2_WhisperBlocked;
+            this.checkBox11.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox11.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_WhisperBlocked", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox11.Location = new System.Drawing.Point(90, 149);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(146, 17);
+            this.checkBox11.TabIndex = 25;
+            this.checkBox11.Text = "blocke Whisper Anfragen";
+            this.ToolTip.SetToolTip(this.checkBox11, "wenn aktiviert wird automatisch das\r\nBlock-Whisper Flag von Teamspeak\r\naktiviert." +
+                    "");
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label19
             // 
@@ -583,6 +867,30 @@
             this.label19.Size = new System.Drawing.Size(70, 13);
             this.label19.TabIndex = 24;
             this.label19.Text = "Channel PW:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_ChannelPW", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox6.Location = new System.Drawing.Point(90, 123);
+            this.textBox6.MaxLength = 128;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.PasswordChar = '*';
+            this.textBox6.Size = new System.Drawing.Size(229, 20);
+            this.textBox6.TabIndex = 23;
+            this.textBox6.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_ChannelPW;
+            this.ToolTip.SetToolTip(this.textBox6, "Hier muss das Gateway Kanal Passwort\r\n(falls vorhanden) eingegeben werden.");
+            this.textBox6.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // numericUpDown11
+            // 
+            this.numericUpDown11.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_ChannelID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown11.Location = new System.Drawing.Point(90, 97);
+            this.numericUpDown11.Name = "numericUpDown11";
+            this.numericUpDown11.Size = new System.Drawing.Size(65, 20);
+            this.numericUpDown11.TabIndex = 22;
+            this.ToolTip.SetToolTip(this.numericUpDown11, "Hier muss die Gateway-Kanal ID eingegeben werden.");
+            this.numericUpDown11.Value = global::FFN_Switcher.Properties.Settings.Default.TSServer2_ChannelID;
+            this.numericUpDown11.ValueChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label20
             // 
@@ -602,6 +910,19 @@
             this.label21.TabIndex = 20;
             this.label21.Text = "Passwort:";
             // 
+            // textBox7
+            // 
+            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_Password", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox7.Location = new System.Drawing.Point(90, 71);
+            this.textBox7.MaxLength = 128;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.PasswordChar = '*';
+            this.textBox7.Size = new System.Drawing.Size(229, 20);
+            this.textBox7.TabIndex = 19;
+            this.textBox7.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_Password;
+            this.ToolTip.SetToolTip(this.textBox7, "Hier wird das Passwort passend zum Teamspeak\r\nLoginnamen eingegeben.");
+            this.textBox7.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -611,6 +932,20 @@
             this.label22.TabIndex = 18;
             this.label22.Text = "Loginname:";
             // 
+            // textBox8
+            // 
+            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_LoginName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox8.Location = new System.Drawing.Point(90, 45);
+            this.textBox8.MaxLength = 128;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(229, 20);
+            this.textBox8.TabIndex = 17;
+            this.textBox8.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_LoginName;
+            this.ToolTip.SetToolTip(this.textBox8, "Hier den Loginnamen der als Nutzername für\r\nden Server verwendet werden soll eing" +
+                    "eben.\r\nAchtung: Dies ist nicht der Gateway bzw.\r\nangezeigt Name sondern der Logi" +
+                    "nname.");
+            this.textBox8.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -619,6 +954,18 @@
             this.label23.Size = new System.Drawing.Size(78, 13);
             this.label23.TabIndex = 16;
             this.label23.Text = "Serveradresse:";
+            // 
+            // textBox9
+            // 
+            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_ServerURL", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox9.Location = new System.Drawing.Point(90, 19);
+            this.textBox9.MaxLength = 128;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(229, 20);
+            this.textBox9.TabIndex = 15;
+            this.textBox9.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_ServerURL;
+            this.ToolTip.SetToolTip(this.textBox9, "Hier die Serveradresse des Teamspeak Servers\r\nangeben. z.B: voice.ts-ffn.de\r\n");
+            this.textBox9.TextChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // groupBox1
             // 
@@ -652,7 +999,37 @@
             this.ToolTip.SetToolTip(this.button1, "Bei einem Click auf diesen Button wird die Channel ID des Channels übernommen in " +
                     "welchem sich gerade der Switcher befindet.");
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.ApplyChannelID_ServerConnection_2_Click);
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer1_AlwaysChannelCommander;
+            this.checkBox9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_AlwaysChannelCommander", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox9.Location = new System.Drawing.Point(90, 172);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(154, 17);
+            this.checkBox9.TabIndex = 14;
+            this.checkBox9.Text = "immer Channel Commander";
+            this.ToolTip.SetToolTip(this.checkBox9, "wenn aktiviert wird das Gateway immer\r\nals Channel-Commander eingeloggt\r\nsein.");
+            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer1_WhisperBlocked;
+            this.checkBox8.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_WhisperBlocked", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox8.Location = new System.Drawing.Point(90, 149);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(146, 17);
+            this.checkBox8.TabIndex = 13;
+            this.checkBox8.Text = "blocke Whisper Anfragen";
+            this.ToolTip.SetToolTip(this.checkBox8, "wenn aktiviert wird automatisch das\r\nBlock-Whisper Flag von Teamspeak\r\naktiviert." +
+                    "");
+            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label18
             // 
@@ -662,6 +1039,30 @@
             this.label18.Size = new System.Drawing.Size(70, 13);
             this.label18.TabIndex = 12;
             this.label18.Text = "Channel PW:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_ChannelPW", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox5.Location = new System.Drawing.Point(90, 123);
+            this.textBox5.MaxLength = 128;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.PasswordChar = '*';
+            this.textBox5.Size = new System.Drawing.Size(229, 20);
+            this.textBox5.TabIndex = 11;
+            this.textBox5.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_ChannelPW;
+            this.ToolTip.SetToolTip(this.textBox5, "Hier muss das Gateway Kanal Passwort\r\n(falls vorhanden) eingegeben werden.\r\n");
+            this.textBox5.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // numericUpDown10
+            // 
+            this.numericUpDown10.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_ChannelID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown10.Location = new System.Drawing.Point(90, 97);
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.Size = new System.Drawing.Size(65, 20);
+            this.numericUpDown10.TabIndex = 10;
+            this.ToolTip.SetToolTip(this.numericUpDown10, "Hier muss die Gateway-Kanal ID eingegeben werden.");
+            this.numericUpDown10.Value = global::FFN_Switcher.Properties.Settings.Default.TSServer1_ChannelID;
+            this.numericUpDown10.ValueChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label17
             // 
@@ -681,6 +1082,19 @@
             this.label16.TabIndex = 7;
             this.label16.Text = "Passwort:";
             // 
+            // textBox4
+            // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_Password", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox4.Location = new System.Drawing.Point(90, 71);
+            this.textBox4.MaxLength = 128;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '*';
+            this.textBox4.Size = new System.Drawing.Size(229, 20);
+            this.textBox4.TabIndex = 6;
+            this.textBox4.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_Password;
+            this.ToolTip.SetToolTip(this.textBox4, "Hier wird das Passwort passend zum Teamspeak\r\nLoginnamen eingegeben.");
+            this.textBox4.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -690,6 +1104,20 @@
             this.label15.TabIndex = 5;
             this.label15.Text = "Loginname:";
             // 
+            // textBox3
+            // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_LoginName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox3.Location = new System.Drawing.Point(90, 45);
+            this.textBox3.MaxLength = 128;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(229, 20);
+            this.textBox3.TabIndex = 4;
+            this.textBox3.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_LoginName;
+            this.ToolTip.SetToolTip(this.textBox3, "Hier den Loginnamen der als Nutzername für\r\nden Server verwendet werden soll eing" +
+                    "eben.\r\nAchtung: Dies ist nicht der Gateway bzw.\r\nangezeigt Name sondern der Logi" +
+                    "nname.");
+            this.textBox3.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -698,6 +1126,18 @@
             this.label14.Size = new System.Drawing.Size(78, 13);
             this.label14.TabIndex = 3;
             this.label14.Text = "Serveradresse:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_ServerURL", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox2.Location = new System.Drawing.Point(90, 19);
+            this.textBox2.MaxLength = 128;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(229, 20);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_ServerURL;
+            this.ToolTip.SetToolTip(this.textBox2, "Hier die Serveradresse des Teamspeak Servers\r\nangeben. z.B: voice.ts-ffn.de");
+            this.textBox2.TextChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // BeaconSettingsTab
             // 
@@ -787,6 +1227,35 @@
             this.label40.Size = new System.Drawing.Size(189, 13);
             this.label40.TabIndex = 33;
             this.label40.Text = "Sekunden Intervallen erneut abspielen";
+            // 
+            // numericUpDown15
+            // 
+            this.numericUpDown15.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "ReplayGatewayDeactivatedSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown15.Location = new System.Drawing.Point(265, 95);
+            this.numericUpDown15.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown15.Name = "numericUpDown15";
+            this.numericUpDown15.Size = new System.Drawing.Size(57, 20);
+            this.numericUpDown15.TabIndex = 32;
+            this.numericUpDown15.Value = global::FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivatedSeconds;
+            // 
+            // checkBox24
+            // 
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.Checked = global::FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivated;
+            this.checkBox24.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "ReplayGatewayDeactivated", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox24.Location = new System.Drawing.Point(134, 97);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(138, 17);
+            this.checkBox24.TabIndex = 31;
+            this.checkBox24.Text = "Deaktiviert-Warnung in ";
+            this.ToolTip.SetToolTip(this.checkBox24, "Soll die Warnung dass das Gateway deaktiviert wurde im festgelegten Intervall ern" +
+                    "eut abgespielt werden? Die Warnung wird in jedem Fall nur dann wiederholt wenn d" +
+                    "ie Warnung überhaupt aktiviert wurde.");
+            this.checkBox24.UseVisualStyleBackColor = true;
             // 
             // offline_playbutton
             // 
@@ -899,6 +1368,19 @@
             this.connectfilebutton.UseVisualStyleBackColor = true;
             this.connectfilebutton.Click += new System.EventHandler(this.connectfilebutton_Click);
             // 
+            // checkBox23
+            // 
+            this.checkBox23.AutoSize = true;
+            this.checkBox23.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayWhenOffline;
+            this.checkBox23.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayWhenOffline", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox23.Location = new System.Drawing.Point(413, 156);
+            this.checkBox23.Name = "checkBox23";
+            this.checkBox23.Size = new System.Drawing.Size(203, 17);
+            this.checkBox23.TabIndex = 20;
+            this.checkBox23.Text = "abspielen wenn Gateway offline geht.";
+            this.checkBox23.UseVisualStyleBackColor = true;
+            this.checkBox23.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label38
             // 
             this.label38.AutoSize = true;
@@ -907,6 +1389,31 @@
             this.label38.Size = new System.Drawing.Size(97, 13);
             this.label38.TabIndex = 19;
             this.label38.Text = "Offline Sounddatei:";
+            // 
+            // textBox18
+            // 
+            this.textBox18.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "GatewayOfflineFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox18.Location = new System.Drawing.Point(134, 154);
+            this.textBox18.MaxLength = 128;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(199, 20);
+            this.textBox18.TabIndex = 18;
+            this.textBox18.Text = global::FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile;
+            this.ToolTip.SetToolTip(this.textBox18, "Hier die Sounddatei angeben die gespielt wird\r\nwenn das Gateway Offline geht.");
+            this.textBox18.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox22
+            // 
+            this.checkBox22.AutoSize = true;
+            this.checkBox22.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayRogerBeep;
+            this.checkBox22.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayRogerBeep", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox22.Location = new System.Drawing.Point(413, 130);
+            this.checkBox22.Name = "checkBox22";
+            this.checkBox22.Size = new System.Drawing.Size(130, 17);
+            this.checkBox22.TabIndex = 17;
+            this.checkBox22.Text = "Rogerbeep abspielen.";
+            this.checkBox22.UseVisualStyleBackColor = true;
+            this.checkBox22.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label37
             // 
@@ -917,6 +1424,31 @@
             this.label37.TabIndex = 16;
             this.label37.Text = "Rogerbeep Sounddatei:";
             // 
+            // textBox17
+            // 
+            this.textBox17.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "RogerBeepFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox17.Location = new System.Drawing.Point(134, 128);
+            this.textBox17.MaxLength = 128;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(199, 20);
+            this.textBox17.TabIndex = 15;
+            this.textBox17.Text = global::FFN_Switcher.Properties.Settings.Default.RogerBeepFile;
+            this.ToolTip.SetToolTip(this.textBox17, "Hier die Sounddatei angeben die als\r\nRogerbeep gespielt wird.");
+            this.textBox17.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox21
+            // 
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayWhenDisabled;
+            this.checkBox21.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayWhenDisabled", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox21.Location = new System.Drawing.Point(413, 73);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(232, 17);
+            this.checkBox21.TabIndex = 14;
+            this.checkBox21.Text = "abspielen wenn Gateway deaktiviert wurde.";
+            this.checkBox21.UseVisualStyleBackColor = true;
+            this.checkBox21.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -925,6 +1457,32 @@
             this.label36.Size = new System.Drawing.Size(118, 13);
             this.label36.TabIndex = 13;
             this.label36.Text = "Deaktiviert Sounddatei:";
+            // 
+            // textBox16
+            // 
+            this.textBox16.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "GatewayDisabledFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox16.Location = new System.Drawing.Point(134, 71);
+            this.textBox16.MaxLength = 128;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(199, 20);
+            this.textBox16.TabIndex = 12;
+            this.textBox16.Text = global::FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile;
+            this.ToolTip.SetToolTip(this.textBox16, "Hier die Sounddatei angeben die gespielt wird\r\nwenn das Gateway aus dem Gateway K" +
+                    "anal\r\nverschoben wurde.");
+            this.textBox16.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox20
+            // 
+            this.checkBox20.AutoSize = true;
+            this.checkBox20.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayAtDisconnect;
+            this.checkBox20.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayAtDisconnect", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox20.Location = new System.Drawing.Point(413, 47);
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.Size = new System.Drawing.Size(199, 17);
+            this.checkBox20.TabIndex = 11;
+            this.checkBox20.Text = "bei getrennter Verbindung abspielen.";
+            this.checkBox20.UseVisualStyleBackColor = true;
+            this.checkBox20.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // label35
             // 
@@ -935,6 +1493,31 @@
             this.label35.TabIndex = 10;
             this.label35.Text = "Disconnect Sounddatei:";
             // 
+            // textBox15
+            // 
+            this.textBox15.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "DisconnectFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox15.Location = new System.Drawing.Point(134, 45);
+            this.textBox15.MaxLength = 128;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(199, 20);
+            this.textBox15.TabIndex = 9;
+            this.textBox15.Text = global::FFN_Switcher.Properties.Settings.Default.DisconnectFile;
+            this.ToolTip.SetToolTip(this.textBox15, "Hier die Sounddatei angeben die als Disconnect-Signal\r\ngespielt werden soll.");
+            this.textBox15.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // checkBox19
+            // 
+            this.checkBox19.AutoSize = true;
+            this.checkBox19.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayAtConnect;
+            this.checkBox19.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayAtConnect", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox19.Location = new System.Drawing.Point(413, 20);
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.Size = new System.Drawing.Size(252, 17);
+            this.checkBox19.TabIndex = 8;
+            this.checkBox19.Text = "bei erfolgreichem Verbindungsaufbau abspielen.";
+            this.checkBox19.UseVisualStyleBackColor = true;
+            this.checkBox19.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -943,6 +1526,18 @@
             this.label34.Size = new System.Drawing.Size(107, 13);
             this.label34.TabIndex = 7;
             this.label34.Text = "Connect Sounddatei:";
+            // 
+            // textBox14
+            // 
+            this.textBox14.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "ConnectFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox14.Location = new System.Drawing.Point(134, 18);
+            this.textBox14.MaxLength = 128;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(199, 20);
+            this.textBox14.TabIndex = 6;
+            this.textBox14.Text = global::FFN_Switcher.Properties.Settings.Default.ConnectFile;
+            this.ToolTip.SetToolTip(this.textBox14, "Hier die Sounddatei angeben die als Connect-Signal\r\ngespielt werden soll.");
+            this.textBox14.TextChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // groupBox9
             // 
@@ -997,6 +1592,23 @@
             this.label32.TabIndex = 14;
             this.label32.Text = "Sekunden spielen.";
             // 
+            // numericUpDown14
+            // 
+            this.numericUpDown14.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "MaximumBeaconPlayTimeSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown14.Location = new System.Drawing.Point(500, 45);
+            this.numericUpDown14.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numericUpDown14.Name = "numericUpDown14";
+            this.numericUpDown14.Size = new System.Drawing.Size(43, 20);
+            this.numericUpDown14.TabIndex = 13;
+            this.ToolTip.SetToolTip(this.numericUpDown14, "Wie lang darf die Bake maximal sein. Diese\r\nEinstellung wird aus Sicherheitsgründ" +
+                    "en\r\ngetroffen um ein zu langes Träger-Halten \r\nzu verhindern.");
+            this.numericUpDown14.Value = global::FFN_Switcher.Properties.Settings.Default.MaximumBeaconPlayTimeSeconds;
+            this.numericUpDown14.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -1015,882 +1627,6 @@
             this.label31.TabIndex = 11;
             this.label31.Text = "Minuten wiederholen.";
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(398, 22);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(96, 13);
-            this.label30.TabIndex = 9;
-            this.label30.Text = "Gateway Bake alle";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(7, 22);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(109, 13);
-            this.label29.TabIndex = 5;
-            this.label29.Text = "Gateway Bakendatei:";
-            // 
-            // TeamspeakTab
-            // 
-            this.TeamspeakTab.Controls.Add(this.groupBox8);
-            this.TeamspeakTab.Controls.Add(this.groupBox7);
-            this.TeamspeakTab.Controls.Add(this.groupBox6);
-            this.TeamspeakTab.Location = new System.Drawing.Point(4, 22);
-            this.TeamspeakTab.Name = "TeamspeakTab";
-            this.TeamspeakTab.Size = new System.Drawing.Size(687, 348);
-            this.TeamspeakTab.TabIndex = 3;
-            this.TeamspeakTab.Text = "Teamspeak, Webserver, Logfile";
-            this.TeamspeakTab.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.sprechpauseMessage);
-            this.groupBox8.Controls.Add(this.logfilebutton);
-            this.groupBox8.Controls.Add(this.checkBox15);
-            this.groupBox8.Controls.Add(this.textBox12);
-            this.groupBox8.Controls.Add(this.label28);
-            this.groupBox8.Controls.Add(this.checkBox14);
-            this.groupBox8.Location = new System.Drawing.Point(8, 166);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(671, 174);
-            this.groupBox8.TabIndex = 2;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Logfile";
-            // 
-            // logfilebutton
-            // 
-            this.logfilebutton.Location = new System.Drawing.Point(633, 17);
-            this.logfilebutton.Name = "logfilebutton";
-            this.logfilebutton.Size = new System.Drawing.Size(32, 23);
-            this.logfilebutton.TabIndex = 22;
-            this.logfilebutton.Text = "...";
-            this.ToolTip.SetToolTip(this.logfilebutton, "Hier wird der Pfad und Dateiname des Logfiles\r\nangegeben.");
-            this.logfilebutton.UseVisualStyleBackColor = true;
-            this.logfilebutton.Click += new System.EventHandler(this.logfilebutton_Click);
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(11, 22);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(41, 13);
-            this.label28.TabIndex = 19;
-            this.label28.Text = "Logfile:";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.teamspeakclientfilebutton);
-            this.groupBox7.Controls.Add(this.textBox11);
-            this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Controls.Add(this.checkBox13);
-            this.groupBox7.Location = new System.Drawing.Point(8, 106);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(671, 54);
-            this.groupBox7.TabIndex = 1;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Teamspeak Client";
-            // 
-            // teamspeakclientfilebutton
-            // 
-            this.teamspeakclientfilebutton.Location = new System.Drawing.Point(459, 17);
-            this.teamspeakclientfilebutton.Name = "teamspeakclientfilebutton";
-            this.teamspeakclientfilebutton.Size = new System.Drawing.Size(32, 23);
-            this.teamspeakclientfilebutton.TabIndex = 19;
-            this.teamspeakclientfilebutton.Text = "...";
-            this.ToolTip.SetToolTip(this.teamspeakclientfilebutton, "Hier wird der komplette Pfad und Dateiname des\r\nTeamspeak Client Programms angege" +
-                    "ben.");
-            this.teamspeakclientfilebutton.UseVisualStyleBackColor = true;
-            this.teamspeakclientfilebutton.Click += new System.EventHandler(this.teamspeakclientfilebutton_Click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(11, 22);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(95, 13);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Teamspeak Client:";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.checkBox12);
-            this.groupBox6.Controls.Add(this.textBox10);
-            this.groupBox6.Controls.Add(this.label26);
-            this.groupBox6.Controls.Add(this.label25);
-            this.groupBox6.Controls.Add(this.ipAddressControl1);
-            this.groupBox6.Controls.Add(this.numericUpDown12);
-            this.groupBox6.Controls.Add(this.label24);
-            this.groupBox6.Location = new System.Drawing.Point(8, 3);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(671, 97);
-            this.groupBox6.TabIndex = 0;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Webserver Einstellungen";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(7, 48);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(123, 13);
-            this.label26.TabIndex = 15;
-            this.label26.Text = "Webseiten Verzeichniss:";
-            this.ToolTip.SetToolTip(this.label26, "Hier wird das Verzeichniss eingetragen in welchem\r\nsich die HTML Dateien und Bild" +
-                    "er des internen\r\nWebservers befinden.");
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(14, 22);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(116, 13);
-            this.label25.TabIndex = 14;
-            this.label25.Text = "Webserver IP Adresse:";
-            this.ToolTip.SetToolTip(this.label25, "Hier soll die IP Adresse eingegeben werden unter\r\nder der interne Webserver errei" +
-                    "chbar sein soll. Im \r\nNormalfall ist dies 127.0.0.1 (localhost).");
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(245, 22);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(84, 13);
-            this.label24.TabIndex = 11;
-            this.label24.Text = "Webserver Port:";
-            this.ToolTip.SetToolTip(this.label24, "Hier wird die Portnummer eingestellt unter\r\ndie der interne Webserver erreichbar " +
-                    "sein\r\nsoll.");
-            // 
-            // ExperimentalOptionsTab
-            // 
-            this.ExperimentalOptionsTab.Controls.Add(this.groupBox11);
-            this.ExperimentalOptionsTab.Location = new System.Drawing.Point(4, 22);
-            this.ExperimentalOptionsTab.Name = "ExperimentalOptionsTab";
-            this.ExperimentalOptionsTab.Size = new System.Drawing.Size(687, 348);
-            this.ExperimentalOptionsTab.TabIndex = 5;
-            this.ExperimentalOptionsTab.Text = "Experimentell";
-            this.ExperimentalOptionsTab.UseVisualStyleBackColor = true;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.numericUpDown23);
-            this.groupBox11.Controls.Add(this.numericUpDown22);
-            this.groupBox11.Controls.Add(this.numericUpDown21);
-            this.groupBox11.Controls.Add(this.numericUpDown20);
-            this.groupBox11.Controls.Add(this.numericUpDown19);
-            this.groupBox11.Controls.Add(this.numericUpDown18);
-            this.groupBox11.Controls.Add(this.numericUpDown17);
-            this.groupBox11.Controls.Add(this.label45);
-            this.groupBox11.Controls.Add(this.label47);
-            this.groupBox11.Controls.Add(this.label48);
-            this.groupBox11.Controls.Add(this.label46);
-            this.groupBox11.Controls.Add(this.label44);
-            this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Controls.Add(this.label42);
-            this.groupBox11.Controls.Add(this.label12);
-            this.groupBox11.Controls.Add(this.numericUpDown8);
-            this.groupBox11.Location = new System.Drawing.Point(3, 3);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(676, 337);
-            this.groupBox11.TabIndex = 0;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Zeitsteuerungen";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(88, 99);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(459, 13);
-            this.label45.TabIndex = 1;
-            this.label45.Text = "Millisekunden warten bevor ein Connect Versuch zum TS Server versucht wird (Stand" +
-                "ard: 1000)";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(88, 175);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(474, 26);
-            this.label47.TabIndex = 1;
-            this.label47.Text = "Millisekunden warten bevor ein erneuter Connect Versuch unternommen ist nachdem a" +
-                "lle Versuche\r\ngescheitert sind (Standard: 300000)";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(88, 209);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(466, 39);
-            this.label48.TabIndex = 1;
-            this.label48.Text = resources.GetString("label48.Text");
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(88, 151);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(447, 13);
-            this.label46.TabIndex = 1;
-            this.label46.Text = "Millisekunden nach dem erfolgreichen Connect auf die Channel Liste warten (Standa" +
-                "rd: 1000)";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(88, 125);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(514, 13);
-            this.label44.TabIndex = 1;
-            this.label44.Text = "Millisekunden warten bevor ein erneuter Reconnect Versuch zum TS Server versucht " +
-                "wird (Standard: 1000)";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(88, 73);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(470, 13);
-            this.label43.TabIndex = 1;
-            this.label43.Text = "Millisekunden warten wenn Teamspeak den Switcher bzgl. des Voice Flags belügt (St" +
-                "andard: 100)";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(88, 47);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(299, 13);
-            this.label42.TabIndex = 1;
-            this.label42.Text = "Millisekunden Pause des Teamspeak Clients (Standard: 1000)";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(88, 21);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(368, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Millisekunden auf den Start des Teamspeak Clients warten. (Standard: 1000)";
-            // 
-            // ToolTip
-            // 
-            this.ToolTip.IsBalloon = true;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Checked = global::FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalking;
-            this.checkBox26.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "MuteGatewayAfterTalking", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox26.Location = new System.Drawing.Point(7, 116);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(83, 17);
-            this.checkBox26.TabIndex = 26;
-            this.checkBox26.Text = "Gateway für";
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown24
-            // 
-            this.numericUpDown24.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "MuteGatewayAfterTalkingTime", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown24.Location = new System.Drawing.Point(96, 115);
-            this.numericUpDown24.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown24.Name = "numericUpDown24";
-            this.numericUpDown24.Size = new System.Drawing.Size(44, 20);
-            this.numericUpDown24.TabIndex = 27;
-            this.numericUpDown24.Value = global::FFN_Switcher.Properties.Settings.Default.MuteGatewayAfterTalkingTime;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(146, 117);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(376, 13);
-            this.label49.TabIndex = 25;
-            this.label49.Text = "Millisekunden stumm schalten nachdem im Gateway Kanal gesprochen wurde.";
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Checked = global::FFN_Switcher.Properties.Settings.Default.ExperimentalOptionsEnabled;
-            this.checkBox7.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "ExperimentalOptionsEnabled", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox7.Location = new System.Drawing.Point(6, 43);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(368, 17);
-            this.checkBox7.TabIndex = 1;
-            this.checkBox7.Text = "Experimentelle Einstellungen freischalten (Warnung: Auf eigene Gefahr !)";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Checked = global::FFN_Switcher.Properties.Settings.Default.AskBeforeQuit;
-            this.checkBox6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox6.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "AskBeforeQuit", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox6.Location = new System.Drawing.Point(6, 19);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(275, 17);
-            this.checkBox6.TabIndex = 0;
-            this.checkBox6.Text = "noch einmal fragen bevor der Switcher beendet wird.";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown9
-            // 
-            this.numericUpDown9.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "NumberOfChecksIfTeamspeakIsLying", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown9.Location = new System.Drawing.Point(310, 91);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(37, 20);
-            this.numericUpDown9.TabIndex = 24;
-            this.ToolTip.SetToolTip(this.numericUpDown9, resources.GetString("numericUpDown9.ToolTip"));
-            this.numericUpDown9.Value = global::FFN_Switcher.Properties.Settings.Default.NumberOfChecksIfTeamspeakIsLying;
-            this.numericUpDown9.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Checked = global::FFN_Switcher.Properties.Settings.Default.FlagChannelCommanderWhenSending;
-            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "FlagChannelCommanderWhenSending", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox5.Location = new System.Drawing.Point(6, 92);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(293, 17);
-            this.checkBox5.TabIndex = 22;
-            this.checkBox5.Text = "Channel Commander Flag setzen wenn Gateway sendet.";
-            this.ToolTip.SetToolTip(this.checkBox5, "Channel Commander Flag bedeutet wenn das Gateway\r\nsendet und Spache dabei übertra" +
-                    "gen wird leuchtet die \r\n(sonst grüne Lampe) nun ROT auf und signalisiert den\r\nak" +
-                    "tiven Betrieb des Gateways.\r\n");
-            this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown7
-            // 
-            this.numericUpDown7.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "AutoReconnectSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown7.Location = new System.Drawing.Point(288, 65);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(37, 20);
-            this.numericUpDown7.TabIndex = 17;
-            this.ToolTip.SetToolTip(this.numericUpDown7, resources.GetString("numericUpDown7.ToolTip"));
-            this.numericUpDown7.Value = global::FFN_Switcher.Properties.Settings.Default.AutoReconnectSeconds;
-            this.numericUpDown7.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Checked = global::FFN_Switcher.Properties.Settings.Default.AutoReconnect;
-            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox4.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "AutoReconnect", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox4.Location = new System.Drawing.Point(6, 66);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(275, 17);
-            this.checkBox4.TabIndex = 16;
-            this.checkBox4.Text = "bei Verbindungsabbruch automatisch neu verbinden.";
-            this.ToolTip.SetToolTip(this.checkBox4, "ein Haken im Kästchen bedeutet AKTIV:\r\nalso wird bei Verlust der Internetverbindu" +
-                    "ng\r\nsolange versucht eine Verbindung wieder\r\nherzustellen bis die Verbindung wie" +
-                    "der\r\nerfolgreich hergestellt wurde.\r\n");
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WatchdogMinutes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown6.Location = new System.Drawing.Point(556, 40);
-            this.numericUpDown6.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(37, 20);
-            this.numericUpDown6.TabIndex = 13;
-            this.ToolTip.SetToolTip(this.numericUpDown6, resources.GetString("numericUpDown6.ToolTip"));
-            this.numericUpDown6.Value = global::FFN_Switcher.Properties.Settings.Default.WatchdogMinutes;
-            this.numericUpDown6.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "DelayAfterSendingMilliSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown5.Location = new System.Drawing.Point(51, 40);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(58, 20);
-            this.numericUpDown5.TabIndex = 10;
-            this.ToolTip.SetToolTip(this.numericUpDown5, resources.GetString("numericUpDown5.ToolTip"));
-            this.numericUpDown5.Value = global::FFN_Switcher.Properties.Settings.Default.DelayAfterSendingMilliSeconds;
-            this.numericUpDown5.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "DelaySeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown4.Location = new System.Drawing.Point(556, 14);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(37, 20);
-            this.numericUpDown4.TabIndex = 7;
-            this.ToolTip.SetToolTip(this.numericUpDown4, "Der hier definierte Wert ist sozusagen die unterste Grenze\r\ndie ein Durchgang max" +
-                    "imal von der Länge haben sollte.");
-            this.numericUpDown4.Value = global::FFN_Switcher.Properties.Settings.Default.DelaySeconds;
-            this.numericUpDown4.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "UseServer2AfterNumberOfFailedReconnects", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown2.Location = new System.Drawing.Point(288, 14);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(50, 20);
-            this.numericUpDown2.TabIndex = 5;
-            this.ToolTip.SetToolTip(this.numericUpDown2, "Nach dieser Menge an gescheiterten Verbindungsversuchen\r\nverwendet der Switcher a" +
-                    "utomatisch den Alternativen Server 2.");
-            this.numericUpDown2.Value = global::FFN_Switcher.Properties.Settings.Default.UseServer2AfterNumberOfFailedReconnects;
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "Comport", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown3.Location = new System.Drawing.Point(140, 42);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(41, 20);
-            this.numericUpDown3.TabIndex = 5;
-            this.ToolTip.SetToolTip(this.numericUpDown3, "Im Computer gibt es je nach Ausstatung mehrere serielle\r\nSchnittstellen auch COM " +
-                    "Port genannt.\r\nHier musst du nun den auswählen an den dein\r\nComportkabel angesch" +
-                    "lossen wurde.");
-            this.numericUpDown3.Value = global::FFN_Switcher.Properties.Settings.Default.Comport;
-            this.numericUpDown3.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Checked = global::FFN_Switcher.Properties.Settings.Default.RTS;
-            this.checkBox3.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "RTS", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox3.Location = new System.Drawing.Point(187, 12);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(110, 30);
-            this.checkBox3.TabIndex = 4;
-            this.checkBox3.Text = "verwendet RTS\r\n(deaktiviert=DTR)\r\n";
-            this.ToolTip.SetToolTip(this.checkBox3, resources.GetString("checkBox3.ToolTip"));
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = global::FFN_Switcher.Properties.Settings.Default.ComportEnabled;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "ComportEnabled", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox2.Location = new System.Drawing.Point(6, 19);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(160, 17);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Serielle Schnittstelle aktiviert";
-            this.ToolTip.SetToolTip(this.checkBox2, resources.GetString("checkBox2.ToolTip"));
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WaitForConnectSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown1.Location = new System.Drawing.Point(197, 43);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(65, 20);
-            this.numericUpDown1.TabIndex = 3;
-            this.ToolTip.SetToolTip(this.numericUpDown1, "Diese Zeit in Sekunden gibt an wie lange der\r\nSwitcher auf eine erfolgreiche Verb" +
-                    "indung mit\r\ndem Teamspeak Server wartet.");
-            this.numericUpDown1.Value = global::FFN_Switcher.Properties.Settings.Default.WaitForConnectSeconds;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = global::FFN_Switcher.Properties.Settings.Default.GatewayActivated;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "GatewayActivated", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(121, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Gateway ist aktiviert";
-            this.ToolTip.SetToolTip(this.checkBox1, "Hiermit wird sichergestellt das das Gateway\r\nin Betriebszustand geschaltet ist.");
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // NicknameTextBox
-            // 
-            this.NicknameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "Nickname", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.NicknameTextBox.Location = new System.Drawing.Point(197, 17);
-            this.NicknameTextBox.MaxLength = 128;
-            this.NicknameTextBox.Name = "NicknameTextBox";
-            this.NicknameTextBox.Size = new System.Drawing.Size(156, 20);
-            this.NicknameTextBox.TabIndex = 0;
-            this.NicknameTextBox.Text = global::FFN_Switcher.Properties.Settings.Default.Nickname;
-            this.ToolTip.SetToolTip(this.NicknameTextBox, resources.GetString("NicknameTextBox.ToolTip"));
-            this.NicknameTextBox.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer2_AlwaysChannelCommander;
-            this.checkBox10.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_AlwaysChannelCommander", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox10.Location = new System.Drawing.Point(90, 172);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(154, 17);
-            this.checkBox10.TabIndex = 26;
-            this.checkBox10.Text = "immer Channel Commander";
-            this.ToolTip.SetToolTip(this.checkBox10, "wenn aktiviert wird das Gateway immer\r\nals Channel-Commander eingeloggt\r\nsein.");
-            this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer2_WhisperBlocked;
-            this.checkBox11.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox11.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_WhisperBlocked", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox11.Location = new System.Drawing.Point(90, 149);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(146, 17);
-            this.checkBox11.TabIndex = 25;
-            this.checkBox11.Text = "blocke Whisper Anfragen";
-            this.ToolTip.SetToolTip(this.checkBox11, "wenn aktiviert wird automatisch das\r\nBlock-Whisper Flag von Teamspeak\r\naktiviert." +
-                    "");
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox6
-            // 
-            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_ChannelPW", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox6.Location = new System.Drawing.Point(90, 123);
-            this.textBox6.MaxLength = 128;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PasswordChar = '*';
-            this.textBox6.Size = new System.Drawing.Size(229, 20);
-            this.textBox6.TabIndex = 23;
-            this.textBox6.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_ChannelPW;
-            this.ToolTip.SetToolTip(this.textBox6, "Hier muss das Gateway Kanal Passwort\r\n(falls vorhanden) eingegeben werden.");
-            this.textBox6.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown11
-            // 
-            this.numericUpDown11.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_ChannelID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown11.Location = new System.Drawing.Point(90, 97);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(65, 20);
-            this.numericUpDown11.TabIndex = 22;
-            this.ToolTip.SetToolTip(this.numericUpDown11, "Hier muss die Gateway-Kanal ID eingegeben werden.");
-            this.numericUpDown11.Value = global::FFN_Switcher.Properties.Settings.Default.TSServer2_ChannelID;
-            this.numericUpDown11.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox7
-            // 
-            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_Password", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox7.Location = new System.Drawing.Point(90, 71);
-            this.textBox7.MaxLength = 128;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.PasswordChar = '*';
-            this.textBox7.Size = new System.Drawing.Size(229, 20);
-            this.textBox7.TabIndex = 19;
-            this.textBox7.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_Password;
-            this.ToolTip.SetToolTip(this.textBox7, "Hier wird das Passwort passend zum Teamspeak\r\nLoginnamen eingegeben.");
-            this.textBox7.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox8
-            // 
-            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_LoginName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox8.Location = new System.Drawing.Point(90, 45);
-            this.textBox8.MaxLength = 128;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(229, 20);
-            this.textBox8.TabIndex = 17;
-            this.textBox8.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_LoginName;
-            this.ToolTip.SetToolTip(this.textBox8, "Hier den Loginnamen der als Nutzername für\r\nden Server verwendet werden soll eing" +
-                    "eben.\r\nAchtung: Dies ist nicht der Gateway bzw.\r\nangezeigt Name sondern der Logi" +
-                    "nname.");
-            this.textBox8.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox9
-            // 
-            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer2_ServerURL", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox9.Location = new System.Drawing.Point(90, 19);
-            this.textBox9.MaxLength = 128;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(229, 20);
-            this.textBox9.TabIndex = 15;
-            this.textBox9.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer2_ServerURL;
-            this.ToolTip.SetToolTip(this.textBox9, "Hier die Serveradresse des Teamspeak Servers\r\nangeben. z.B: voice.ts-ffn.de\r\n");
-            this.textBox9.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer1_AlwaysChannelCommander;
-            this.checkBox9.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_AlwaysChannelCommander", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox9.Location = new System.Drawing.Point(90, 172);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(154, 17);
-            this.checkBox9.TabIndex = 14;
-            this.checkBox9.Text = "immer Channel Commander";
-            this.ToolTip.SetToolTip(this.checkBox9, "wenn aktiviert wird das Gateway immer\r\nals Channel-Commander eingeloggt\r\nsein.");
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Checked = global::FFN_Switcher.Properties.Settings.Default.TSServer1_WhisperBlocked;
-            this.checkBox8.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox8.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_WhisperBlocked", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox8.Location = new System.Drawing.Point(90, 149);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(146, 17);
-            this.checkBox8.TabIndex = 13;
-            this.checkBox8.Text = "blocke Whisper Anfragen";
-            this.ToolTip.SetToolTip(this.checkBox8, "wenn aktiviert wird automatisch das\r\nBlock-Whisper Flag von Teamspeak\r\naktiviert." +
-                    "");
-            this.checkBox8.UseVisualStyleBackColor = true;
-            this.checkBox8.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox5
-            // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_ChannelPW", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox5.Location = new System.Drawing.Point(90, 123);
-            this.textBox5.MaxLength = 128;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '*';
-            this.textBox5.Size = new System.Drawing.Size(229, 20);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_ChannelPW;
-            this.ToolTip.SetToolTip(this.textBox5, "Hier muss das Gateway Kanal Passwort\r\n(falls vorhanden) eingegeben werden.\r\n");
-            this.textBox5.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown10
-            // 
-            this.numericUpDown10.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_ChannelID", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown10.Location = new System.Drawing.Point(90, 97);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(65, 20);
-            this.numericUpDown10.TabIndex = 10;
-            this.ToolTip.SetToolTip(this.numericUpDown10, "Hier muss die Gateway-Kanal ID eingegeben werden.");
-            this.numericUpDown10.Value = global::FFN_Switcher.Properties.Settings.Default.TSServer1_ChannelID;
-            this.numericUpDown10.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox4
-            // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_Password", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox4.Location = new System.Drawing.Point(90, 71);
-            this.textBox4.MaxLength = 128;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(229, 20);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_Password;
-            this.ToolTip.SetToolTip(this.textBox4, "Hier wird das Passwort passend zum Teamspeak\r\nLoginnamen eingegeben.");
-            this.textBox4.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox3
-            // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_LoginName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox3.Location = new System.Drawing.Point(90, 45);
-            this.textBox3.MaxLength = 128;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(229, 20);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_LoginName;
-            this.ToolTip.SetToolTip(this.textBox3, "Hier den Loginnamen der als Nutzername für\r\nden Server verwendet werden soll eing" +
-                    "eben.\r\nAchtung: Dies ist nicht der Gateway bzw.\r\nangezeigt Name sondern der Logi" +
-                    "nname.");
-            this.textBox3.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox2
-            // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TSServer1_ServerURL", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox2.Location = new System.Drawing.Point(90, 19);
-            this.textBox2.MaxLength = 128;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(229, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = global::FFN_Switcher.Properties.Settings.Default.TSServer1_ServerURL;
-            this.ToolTip.SetToolTip(this.textBox2, "Hier die Serveradresse des Teamspeak Servers\r\nangeben. z.B: voice.ts-ffn.de");
-            this.textBox2.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown15
-            // 
-            this.numericUpDown15.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "ReplayGatewayDeactivatedSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown15.Location = new System.Drawing.Point(265, 95);
-            this.numericUpDown15.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(57, 20);
-            this.numericUpDown15.TabIndex = 32;
-            this.numericUpDown15.Value = global::FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivatedSeconds;
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Checked = global::FFN_Switcher.Properties.Settings.Default.ReplayGatewayDeactivated;
-            this.checkBox24.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "ReplayGatewayDeactivated", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox24.Location = new System.Drawing.Point(134, 97);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(138, 17);
-            this.checkBox24.TabIndex = 31;
-            this.checkBox24.Text = "Deaktiviert-Warnung in ";
-            this.ToolTip.SetToolTip(this.checkBox24, "Soll die Warnung dass das Gateway deaktiviert wurde im festgelegten Intervall ern" +
-                    "eut abgespielt werden? Die Warnung wird in jedem Fall nur dann wiederholt wenn d" +
-                    "ie Warnung überhaupt aktiviert wurde.");
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayWhenOffline;
-            this.checkBox23.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayWhenOffline", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox23.Location = new System.Drawing.Point(413, 156);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(203, 17);
-            this.checkBox23.TabIndex = 20;
-            this.checkBox23.Text = "abspielen wenn Gateway offline geht.";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            this.checkBox23.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox18
-            // 
-            this.textBox18.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "GatewayOfflineFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox18.Location = new System.Drawing.Point(134, 154);
-            this.textBox18.MaxLength = 128;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(199, 20);
-            this.textBox18.TabIndex = 18;
-            this.textBox18.Text = global::FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile;
-            this.ToolTip.SetToolTip(this.textBox18, "Hier die Sounddatei angeben die gespielt wird\r\nwenn das Gateway Offline geht.");
-            this.textBox18.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayRogerBeep;
-            this.checkBox22.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayRogerBeep", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox22.Location = new System.Drawing.Point(413, 130);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(130, 17);
-            this.checkBox22.TabIndex = 17;
-            this.checkBox22.Text = "Rogerbeep abspielen.";
-            this.checkBox22.UseVisualStyleBackColor = true;
-            this.checkBox22.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox17
-            // 
-            this.textBox17.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "RogerBeepFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox17.Location = new System.Drawing.Point(134, 128);
-            this.textBox17.MaxLength = 128;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(199, 20);
-            this.textBox17.TabIndex = 15;
-            this.textBox17.Text = global::FFN_Switcher.Properties.Settings.Default.RogerBeepFile;
-            this.ToolTip.SetToolTip(this.textBox17, "Hier die Sounddatei angeben die als\r\nRogerbeep gespielt wird.");
-            this.textBox17.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayWhenDisabled;
-            this.checkBox21.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayWhenDisabled", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox21.Location = new System.Drawing.Point(413, 73);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(232, 17);
-            this.checkBox21.TabIndex = 14;
-            this.checkBox21.Text = "abspielen wenn Gateway deaktiviert wurde.";
-            this.checkBox21.UseVisualStyleBackColor = true;
-            this.checkBox21.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox16
-            // 
-            this.textBox16.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "GatewayDisabledFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox16.Location = new System.Drawing.Point(134, 71);
-            this.textBox16.MaxLength = 128;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(199, 20);
-            this.textBox16.TabIndex = 12;
-            this.textBox16.Text = global::FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile;
-            this.ToolTip.SetToolTip(this.textBox16, "Hier die Sounddatei angeben die gespielt wird\r\nwenn das Gateway aus dem Gateway K" +
-                    "anal\r\nverschoben wurde.");
-            this.textBox16.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayAtDisconnect;
-            this.checkBox20.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayAtDisconnect", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox20.Location = new System.Drawing.Point(413, 47);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(199, 17);
-            this.checkBox20.TabIndex = 11;
-            this.checkBox20.Text = "bei getrennter Verbindung abspielen.";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            this.checkBox20.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox15
-            // 
-            this.textBox15.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "DisconnectFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox15.Location = new System.Drawing.Point(134, 45);
-            this.textBox15.MaxLength = 128;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(199, 20);
-            this.textBox15.TabIndex = 9;
-            this.textBox15.Text = global::FFN_Switcher.Properties.Settings.Default.DisconnectFile;
-            this.ToolTip.SetToolTip(this.textBox15, "Hier die Sounddatei angeben die als Disconnect-Signal\r\ngespielt werden soll.");
-            this.textBox15.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Checked = global::FFN_Switcher.Properties.Settings.Default.PlayAtConnect;
-            this.checkBox19.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::FFN_Switcher.Properties.Settings.Default, "PlayAtConnect", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBox19.Location = new System.Drawing.Point(413, 20);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(252, 17);
-            this.checkBox19.TabIndex = 8;
-            this.checkBox19.Text = "bei erfolgreichem Verbindungsaufbau abspielen.";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            this.checkBox19.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // textBox14
-            // 
-            this.textBox14.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "ConnectFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox14.Location = new System.Drawing.Point(134, 18);
-            this.textBox14.MaxLength = 128;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(199, 20);
-            this.textBox14.TabIndex = 6;
-            this.textBox14.Text = global::FFN_Switcher.Properties.Settings.Default.ConnectFile;
-            this.ToolTip.SetToolTip(this.textBox14, "Hier die Sounddatei angeben die als Connect-Signal\r\ngespielt werden soll.");
-            this.textBox14.TextChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
-            // numericUpDown14
-            // 
-            this.numericUpDown14.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "MaximumBeaconPlayTimeSeconds", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDown14.Location = new System.Drawing.Point(500, 45);
-            this.numericUpDown14.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(43, 20);
-            this.numericUpDown14.TabIndex = 13;
-            this.ToolTip.SetToolTip(this.numericUpDown14, "Wie lang darf die Bake maximal sein. Diese\r\nEinstellung wird aus Sicherheitsgründ" +
-                    "en\r\ngetroffen um ein zu langes Träger-Halten \r\nzu verhindern.");
-            this.numericUpDown14.Value = global::FFN_Switcher.Properties.Settings.Default.MaximumBeaconPlayTimeSeconds;
-            this.numericUpDown14.ValueChanged += new System.EventHandler(this.enableSaveSettings);
-            // 
             // numericUpDown13
             // 
             this.numericUpDown13.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "GatewayBeaconReplayInMinutes", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -1901,6 +1637,15 @@
             this.ToolTip.SetToolTip(this.numericUpDown13, "In welchem Zeitabstand in Minuten soll\r\ndie Gateway Bake abgespielt werden?");
             this.numericUpDown13.Value = global::FFN_Switcher.Properties.Settings.Default.GatewayBeaconReplayInMinutes;
             this.numericUpDown13.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(398, 22);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(96, 13);
+            this.label30.TabIndex = 9;
+            this.label30.Text = "Gateway Bake alle";
             // 
             // checkBox18
             // 
@@ -1952,6 +1697,15 @@
             this.checkBox16.UseVisualStyleBackColor = true;
             this.checkBox16.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(7, 22);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(109, 13);
+            this.label29.TabIndex = 5;
+            this.label29.Text = "Gateway Bakendatei:";
+            // 
             // textBox13
             // 
             this.textBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "GatewayBeaconFile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -1964,6 +1718,33 @@
             this.ToolTip.SetToolTip(this.textBox13, "Hier die Sounddatei angeben die als Gateway-Bake\r\ngespielt werden soll.");
             this.textBox13.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             this.textBox13.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // TeamspeakTab
+            // 
+            this.TeamspeakTab.Controls.Add(this.groupBox8);
+            this.TeamspeakTab.Controls.Add(this.groupBox7);
+            this.TeamspeakTab.Controls.Add(this.groupBox6);
+            this.TeamspeakTab.Location = new System.Drawing.Point(4, 22);
+            this.TeamspeakTab.Name = "TeamspeakTab";
+            this.TeamspeakTab.Size = new System.Drawing.Size(687, 348);
+            this.TeamspeakTab.TabIndex = 3;
+            this.TeamspeakTab.Text = "Teamspeak, Webserver, Logfile";
+            this.TeamspeakTab.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.sprechpauseMessage);
+            this.groupBox8.Controls.Add(this.logfilebutton);
+            this.groupBox8.Controls.Add(this.checkBox15);
+            this.groupBox8.Controls.Add(this.textBox12);
+            this.groupBox8.Controls.Add(this.label28);
+            this.groupBox8.Controls.Add(this.checkBox14);
+            this.groupBox8.Location = new System.Drawing.Point(8, 166);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(671, 174);
+            this.groupBox8.TabIndex = 2;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Logfile";
             // 
             // sprechpauseMessage
             // 
@@ -1981,6 +1762,17 @@
             this.sprechpauseMessage.UseVisualStyleBackColor = true;
             this.sprechpauseMessage.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
+            // logfilebutton
+            // 
+            this.logfilebutton.Location = new System.Drawing.Point(633, 17);
+            this.logfilebutton.Name = "logfilebutton";
+            this.logfilebutton.Size = new System.Drawing.Size(32, 23);
+            this.logfilebutton.TabIndex = 22;
+            this.logfilebutton.Text = "...";
+            this.ToolTip.SetToolTip(this.logfilebutton, "Hier wird der Pfad und Dateiname des Logfiles\r\nangegeben.");
+            this.logfilebutton.UseVisualStyleBackColor = true;
+            this.logfilebutton.Click += new System.EventHandler(this.logfilebutton_Click);
+            // 
             // checkBox15
             // 
             this.checkBox15.AutoSize = true;
@@ -1994,7 +1786,6 @@
             this.checkBox15.Text = "sollen die Logmeldungen im Status-Tab angezeigt werden?";
             this.ToolTip.SetToolTip(this.checkBox15, "Sollen die Logmeldungen im Status-Tab des Switchers dargestellt werden?");
             this.checkBox15.UseVisualStyleBackColor = true;
-            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
             this.checkBox15.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
             // textBox12
@@ -2007,6 +1798,15 @@
             this.textBox12.Text = global::FFN_Switcher.Properties.Settings.Default.Logfile;
             this.ToolTip.SetToolTip(this.textBox12, "Hier wird der Pfad und Dateiname des Logfiles\r\nangegeben.");
             this.textBox12.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(11, 22);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(41, 13);
+            this.label28.TabIndex = 19;
+            this.label28.Text = "Logfile:";
             // 
             // checkBox14
             // 
@@ -2022,6 +1822,31 @@
             this.checkBox14.UseVisualStyleBackColor = true;
             this.checkBox14.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.teamspeakclientfilebutton);
+            this.groupBox7.Controls.Add(this.textBox11);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.checkBox13);
+            this.groupBox7.Location = new System.Drawing.Point(8, 106);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(671, 54);
+            this.groupBox7.TabIndex = 1;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Teamspeak Client";
+            // 
+            // teamspeakclientfilebutton
+            // 
+            this.teamspeakclientfilebutton.Location = new System.Drawing.Point(459, 17);
+            this.teamspeakclientfilebutton.Name = "teamspeakclientfilebutton";
+            this.teamspeakclientfilebutton.Size = new System.Drawing.Size(32, 23);
+            this.teamspeakclientfilebutton.TabIndex = 19;
+            this.teamspeakclientfilebutton.Text = "...";
+            this.ToolTip.SetToolTip(this.teamspeakclientfilebutton, "Hier wird der komplette Pfad und Dateiname des\r\nTeamspeak Client Programms angege" +
+                    "ben.");
+            this.teamspeakclientfilebutton.UseVisualStyleBackColor = true;
+            this.teamspeakclientfilebutton.Click += new System.EventHandler(this.teamspeakclientfilebutton_Click);
+            // 
             // textBox11
             // 
             this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::FFN_Switcher.Properties.Settings.Default, "TeamspeakClientURL", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -2033,6 +1858,15 @@
             this.ToolTip.SetToolTip(this.textBox11, "Hier wird der komplette Pfad und Dateiname des\r\nTeamspeak Client Programms angege" +
                     "ben.");
             this.textBox11.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(11, 22);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(95, 13);
+            this.label27.TabIndex = 17;
+            this.label27.Text = "Teamspeak Client:";
             // 
             // checkBox13
             // 
@@ -2049,6 +1883,22 @@
                     "nt bei Start\r\ndes Switchers starten.");
             this.checkBox13.UseVisualStyleBackColor = true;
             this.checkBox13.EnabledChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.checkBox12);
+            this.groupBox6.Controls.Add(this.textBox10);
+            this.groupBox6.Controls.Add(this.label26);
+            this.groupBox6.Controls.Add(this.label25);
+            this.groupBox6.Controls.Add(this.ipAddressControl1);
+            this.groupBox6.Controls.Add(this.numericUpDown12);
+            this.groupBox6.Controls.Add(this.label24);
+            this.groupBox6.Location = new System.Drawing.Point(8, 3);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(671, 97);
+            this.groupBox6.TabIndex = 0;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Webserver Einstellungen";
             // 
             // checkBox12
             // 
@@ -2075,6 +1925,28 @@
             this.ToolTip.SetToolTip(this.textBox10, "Hier wird das Verzeichniss eingetragen in welchem\r\nsich die HTML Dateien und Bild" +
                     "er des internen\r\nWebservers befinden.");
             this.textBox10.TextChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(7, 48);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(123, 13);
+            this.label26.TabIndex = 15;
+            this.label26.Text = "Webseiten Verzeichniss:";
+            this.ToolTip.SetToolTip(this.label26, "Hier wird das Verzeichniss eingetragen in welchem\r\nsich die HTML Dateien und Bild" +
+                    "er des internen\r\nWebservers befinden.");
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(14, 22);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(116, 13);
+            this.label25.TabIndex = 14;
+            this.label25.Text = "Webserver IP Adresse:";
+            this.ToolTip.SetToolTip(this.label25, "Hier soll die IP Adresse eingegeben werden unter\r\nder der interne Webserver errei" +
+                    "chbar sein soll. Im \r\nNormalfall ist dies 127.0.0.1 (localhost).");
             // 
             // ipAddressControl1
             // 
@@ -2116,6 +1988,52 @@
                     "sein\r\nsoll.");
             this.numericUpDown12.Value = global::FFN_Switcher.Properties.Settings.Default.WebserverTCPPort;
             this.numericUpDown12.ValueChanged += new System.EventHandler(this.enableSaveSettings);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(245, 22);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(84, 13);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "Webserver Port:";
+            this.ToolTip.SetToolTip(this.label24, "Hier wird die Portnummer eingestellt unter\r\ndie der interne Webserver erreichbar " +
+                    "sein\r\nsoll.");
+            // 
+            // ExperimentalOptionsTab
+            // 
+            this.ExperimentalOptionsTab.Controls.Add(this.groupBox11);
+            this.ExperimentalOptionsTab.Location = new System.Drawing.Point(4, 22);
+            this.ExperimentalOptionsTab.Name = "ExperimentalOptionsTab";
+            this.ExperimentalOptionsTab.Size = new System.Drawing.Size(687, 348);
+            this.ExperimentalOptionsTab.TabIndex = 5;
+            this.ExperimentalOptionsTab.Text = "Experimentell";
+            this.ExperimentalOptionsTab.UseVisualStyleBackColor = true;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.numericUpDown23);
+            this.groupBox11.Controls.Add(this.numericUpDown22);
+            this.groupBox11.Controls.Add(this.numericUpDown21);
+            this.groupBox11.Controls.Add(this.numericUpDown20);
+            this.groupBox11.Controls.Add(this.numericUpDown19);
+            this.groupBox11.Controls.Add(this.numericUpDown18);
+            this.groupBox11.Controls.Add(this.numericUpDown17);
+            this.groupBox11.Controls.Add(this.label45);
+            this.groupBox11.Controls.Add(this.label47);
+            this.groupBox11.Controls.Add(this.label48);
+            this.groupBox11.Controls.Add(this.label46);
+            this.groupBox11.Controls.Add(this.label44);
+            this.groupBox11.Controls.Add(this.label43);
+            this.groupBox11.Controls.Add(this.label42);
+            this.groupBox11.Controls.Add(this.label12);
+            this.groupBox11.Controls.Add(this.numericUpDown8);
+            this.groupBox11.Location = new System.Drawing.Point(3, 3);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(676, 337);
+            this.groupBox11.TabIndex = 0;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Zeitsteuerungen";
             // 
             // numericUpDown23
             // 
@@ -2240,6 +2158,83 @@
             this.numericUpDown17.TabIndex = 2;
             this.numericUpDown17.Value = global::FFN_Switcher.Properties.Settings.Default.WaitForPausedTeamspeakClient;
             // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(88, 99);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(459, 13);
+            this.label45.TabIndex = 1;
+            this.label45.Text = "Millisekunden warten bevor ein Connect Versuch zum TS Server versucht wird (Stand" +
+                "ard: 1000)";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(88, 175);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(474, 26);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "Millisekunden warten bevor ein erneuter Connect Versuch unternommen ist nachdem a" +
+                "lle Versuche\r\ngescheitert sind (Standard: 300000)";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(88, 209);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(466, 39);
+            this.label48.TabIndex = 1;
+            this.label48.Text = resources.GetString("label48.Text");
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(88, 151);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(447, 13);
+            this.label46.TabIndex = 1;
+            this.label46.Text = "Millisekunden nach dem erfolgreichen Connect auf die Channel Liste warten (Standa" +
+                "rd: 1000)";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(88, 125);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(514, 13);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Millisekunden warten bevor ein erneuter Reconnect Versuch zum TS Server versucht " +
+                "wird (Standard: 1000)";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(88, 73);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(470, 13);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "Millisekunden warten wenn Teamspeak den Switcher bzgl. des Voice Flags belügt (St" +
+                "andard: 100)";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(88, 47);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(299, 13);
+            this.label42.TabIndex = 1;
+            this.label42.Text = "Millisekunden Pause des Teamspeak Clients (Standard: 1000)";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(88, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(368, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Millisekunden auf den Start des Teamspeak Clients warten. (Standard: 1000)";
+            // 
             // numericUpDown8
             // 
             this.numericUpDown8.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::FFN_Switcher.Properties.Settings.Default, "WaitForTeamspeakClientTime", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -2259,6 +2254,10 @@
             this.numericUpDown8.TabIndex = 0;
             this.numericUpDown8.Value = global::FFN_Switcher.Properties.Settings.Default.WaitForTeamspeakClientTime;
             // 
+            // ToolTip
+            // 
+            this.ToolTip.IsBalloon = true;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2272,7 +2271,7 @@
             this.MinimumSize = new System.Drawing.Size(350, 200);
             this.Name = "MainWindow";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "Freies Funknetz Switcher";
+            this.Text = "Freies Funknetz Switcher (NG)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainWindow_FormClosed);
             this.Load += new System.EventHandler(this.MainWindow_Load);
@@ -2285,31 +2284,6 @@
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.allgemeineGatewayEinstellungen.ResumeLayout(false);
-            this.allgemeineGatewayEinstellungen.PerformLayout();
-            this.GatewayServerSettingsTab.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.BeaconSettingsTab.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.TeamspeakTab.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.ExperimentalOptionsTab.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
@@ -2317,14 +2291,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.allgemeineGatewayEinstellungen.ResumeLayout(false);
+            this.allgemeineGatewayEinstellungen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.GatewayServerSettingsTab.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            this.BeaconSettingsTab.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
+            this.TeamspeakTab.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
+            this.ExperimentalOptionsTab.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();

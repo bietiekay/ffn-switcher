@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region Usings
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,70 +10,49 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.Media;
-
+#endregion
 
 namespace FFN_Switcher
 {
     public partial class MainWindow : Form
     {
+        #region Definitionen
         public Switcher internalSwitcher;
         delegate void SetStatusCallback(String value);
         private Int32 Counter = 0;
         private bool dontaskagainquit = false;
-
-        public void AddStatusText(String value)
-        {
-            if (this.StatusListBox.InvokeRequired)
-            {
-                SetStatusCallback d = new SetStatusCallback(AddStatusText);
-                this.Invoke(d, new object[] { value });
-            }
-            else
-            {
-                if (Counter > 255)
-                {
-                    Counter = 0;
-                    this.StatusListBox.Items.Clear();
-                }
-
-                Counter++;
-
-                this.StatusListBox.Items.Add(value);
-                this.StatusListBox.SelectedIndex = this.StatusListBox.Items.Count - 1;
-            }
-        }
+        #endregion
 
         public MainWindow()
         {
             InitializeComponent();
-            this.Text = "Freies Funknetz Switcher Version " + Version.VersionNumber;
+            this.Text = "Freies Funknetz Switcher Version (NG) " + Version.VersionNumber;
             if (!FFN_Switcher.Properties.Settings.Default.ExperimentalOptionsEnabled)
             {
                 SwitcherTabControl.TabPages.Remove(ExperimentalOptionsTab);
             }
         }
 
-        private void informationenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MainWindow_Load(object sender, EventArgs e)
         {
-            Informationen infodialog = new Informationen();
-
-            infodialog.ShowDialog();
+            // hier passiert nichts
         }
 
-        private void enableSaveSettings(object sender, EventArgs e)
+        private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
-            einstellungenSpeichernToolStripMenuItem.Enabled = true;
-        }
+            if (einstellungenSpeichernToolStripMenuItem.Enabled)
+            {
+                SaveSettings SaveDialog = new SaveSettings();
+                SaveDialog.ShowDialog();
+            }
+            if (FFN_Switcher.Properties.Settings.Default.AskBeforeQuit)
+            {
+                DialogResult result;
+                result = MessageBox.Show("Soll der Switcher wirklich beendet werden?", "FFN Switcher beenden?", MessageBoxButtons.YesNo);
 
-        private void einstellungenSpeichernToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FFN_Switcher.Properties.Settings.Default.Save();
-            einstellungenSpeichernToolStripMenuItem.Enabled = false;
-        }
-
-        private void switcherBeendenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-                Close();
+                if (result == DialogResult.No)
+                    e.Cancel = true;
+            }
         }
 
         private void MainWindow_FormClosed(object sender, FormClosedEventArgs e)
@@ -80,6 +60,123 @@ namespace FFN_Switcher
                 Application.Exit();
         }
 
+        #region Baken-Preview
+        private void connect_playbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.ConnectFile))
+                {
+                    MessageBox.Show("Connect Soundfile konnte nicht gefunden werden.");
+                    return;
+                }
+                else
+                {
+                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.ConnectFile);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void beacon_playbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile))
+                {
+                    MessageBox.Show("Baken Soundfile konnte nicht gefunden werden.");
+                    return;
+                }
+                else
+                {
+                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void disconnect_playbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.DisconnectFile))
+                {
+                    MessageBox.Show("Disconnect Soundfile konnte nicht gefunden werden.");
+                    return;
+                }
+                else
+                {
+                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.DisconnectFile);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void deaktiviert_playbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile))
+                {
+                    MessageBox.Show("Deaktiviert Soundfile konnte nicht gefunden werden.");
+                    return;
+                }
+                else
+                {
+                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void rogerbeep_playbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.RogerBeepFile))
+                {
+                    MessageBox.Show("Rogerbeep Soundfile konnte nicht gefunden werden.");
+                    return;
+                }
+                else
+                {
+                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.RogerBeepFile);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void offline_playbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile))
+                {
+                    MessageBox.Show("Offline Soundfile konnte nicht gefunden werden.");
+                    return;
+                }
+                else
+                {
+                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+        #endregion
+
+        #region FileOpenDialogs
         private void gatewaybeaconfilebutton_Click(object sender, EventArgs e)
         {
             OpenFileDialog Dialog = new OpenFileDialog();
@@ -183,179 +280,32 @@ namespace FFN_Switcher
                 FFN_Switcher.Properties.Settings.Default.Logfile = Dialog.FileName.Replace('\\', '/'); ;
             }
         }
+        #endregion
 
-        private void MainWindow_Load(object sender, EventArgs e)
+        #region ClickHandlers
+        private void informationenToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Informationen infodialog = new Informationen();
+
+            infodialog.ShowDialog();
         }
 
-        private void connect_playbutton_Click(object sender, EventArgs e)
+        private void enableSaveSettings(object sender, EventArgs e)
         {
-            try
-            {
-                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.ConnectFile))
-                {
-                    MessageBox.Show("Connect Soundfile konnte nicht gefunden werden.");
-                    return;
-                }
-                else
-                {
-                    //SoundPlayer player = new SoundPlayer();
-                    //player.SoundLocation = FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile;
-
-                    //player.Play();
-                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.ConnectFile);
-
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOn();
-                    //internalSwitcher.tsProcessor.beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.ConnectFile);
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOff();
-                }
-            }
-            catch (Exception)
-            {
-            }
+            einstellungenSpeichernToolStripMenuItem.Enabled = true;
         }
 
-        private void beacon_playbutton_Click(object sender, EventArgs e)
+        private void einstellungenSpeichernToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile))
-                {
-                    MessageBox.Show("Baken Soundfile konnte nicht gefunden werden.");
-                    return;
-                }
-                else
-                {
-                    //if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
-                    //    internalSwitcher.tsProcessor.TeamspeakFlags.OutputMuted = true;
-
-                    //SoundPlayer player = new SoundPlayer();
-                    //player.SoundLocation = FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile;
-
-                    //player.Play();
-                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile);
-
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOn();
-                    //internalSwitcher.tsProcessor.beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayBeaconFile);
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOff();
-
-                    //if (FFN_Switcher.Properties.Settings.Default.MuteOutputWhenPlayingBeacon)
-                    //    internalSwitcher.tsProcessor.TeamspeakFlags.OutputMuted = false;
-                }
-            }
-            catch (Exception)
-            {
-            }
+            FFN_Switcher.Properties.Settings.Default.Save();
+            einstellungenSpeichernToolStripMenuItem.Enabled = false;
         }
 
-        private void disconnect_playbutton_Click(object sender, EventArgs e)
+        private void switcherBeendenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.DisconnectFile))
-                {
-                    MessageBox.Show("Disconnect Soundfile konnte nicht gefunden werden.");
-                    return;
-                }
-                else
-                {
-                    //SoundPlayer player = new SoundPlayer();
-                    //player.SoundLocation = FFN_Switcher.Properties.Settings.Default.DisconnectFile;
-
-                    //player.Play();
-                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.DisconnectFile);
-
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOn();
-                    //internalSwitcher.tsProcessor.beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.DisconnectFile);
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOff();
-                }
-            }
-            catch (Exception)
-            {
-            }
+            Close();
         }
 
-        private void deaktiviert_playbutton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile))
-                {
-                    MessageBox.Show("Deaktiviert Soundfile konnte nicht gefunden werden.");
-                    return;
-                }
-                else
-                {
-                    //SoundPlayer player = new SoundPlayer();
-                    //player.SoundLocation = FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile;
-
-                    //player.Play();
-                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile);
-
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOn();
-                    //internalSwitcher.tsProcessor.beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayDisabledFile);
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOff();
-                }
-            }
-            catch (Exception)
-            {
-            }
-        }
-
-        private void rogerbeep_playbutton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.RogerBeepFile))
-                {
-                    MessageBox.Show("Rogerbeep Soundfile konnte nicht gefunden werden.");
-                    return;
-                }
-                else
-                {
-                    //SoundPlayer player = new SoundPlayer();
-                    //player.SoundLocation = FFN_Switcher.Properties.Settings.Default.RogerBeepFile;
-
-                    //player.Play();
-
-                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.RogerBeepFile);
-
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOn();
-                    //internalSwitcher.tsProcessor.beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.RogerBeepFile);
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOff();
-                }
-            }
-            catch (Exception)
-            {
-            }
-        }
-
-        private void offline_playbutton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (!File.Exists(FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile))
-                {
-                    MessageBox.Show("Offline Soundfile konnte nicht gefunden werden.");
-                    return;
-                }
-                else
-                {
-                    //SoundPlayer player = new SoundPlayer();
-                    //player.SoundLocation = FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile;
-
-                    //player.Play();
-
-                    internalSwitcher.tsProcessor.AddPlayBacon(FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile);
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOn();
-                    //internalSwitcher.tsProcessor.beaconProcessor.Play(FFN_Switcher.Properties.Settings.Default.GatewayOfflineFile);
-                    //internalSwitcher.tsProcessor.serialportProcessor.SwitchOff();
-                }
-            }
-            catch (Exception)
-            {
-            }
-        }
 
         private void nachUpdateSuchenToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -363,22 +313,17 @@ namespace FFN_Switcher
             updatewizarddialog.ShowDialog();
         }
 
-        private void checkBox15_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         // channel ID übernehmen in NumericUpDown10
-        private void button1_Click(object sender, EventArgs e)
+        private void ApplyChannelID_ServerConnection_2_Click(object sender, EventArgs e)
         {
             if (internalSwitcher.tsProcessor.lastknownChannelID != -1)
-            { 
+            {
                 numericUpDown10.Value = internalSwitcher.tsProcessor.lastknownChannelID;
             }
         }
 
         // channel ID übernehmen in NumericUpDown11
-        private void button2_Click(object sender, EventArgs e)
+        private void ApplyChannelID_ServerConnection_1_Click(object sender, EventArgs e)
         {
             if (internalSwitcher.tsProcessor.lastknownChannelID != -1)
             {
@@ -386,7 +331,7 @@ namespace FFN_Switcher
             }
         }
 
-        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        private void ExperimentalOptions_CheckedChanged(object sender, EventArgs e)
         {
             if (FFN_Switcher.Properties.Settings.Default.ExperimentalOptionsEnabled)
             {
@@ -400,25 +345,30 @@ namespace FFN_Switcher
             }
         }
 
-        private void MainWindow_FormClosing(object sender, FormClosingEventArgs e)
+        #endregion
+
+        #region Log-Statustextbox
+        public void AddStatusText(String value)
         {
-            if (einstellungenSpeichernToolStripMenuItem.Enabled)
+            if (this.StatusListBox.InvokeRequired)
             {
-                SaveSettings SaveDialog = new SaveSettings();
-
-                SaveDialog.ShowDialog();
+                SetStatusCallback d = new SetStatusCallback(AddStatusText);
+                this.Invoke(d, new object[] { value });
             }
-            
-            if (FFN_Switcher.Properties.Settings.Default.AskBeforeQuit)
+            else
             {
-                DialogResult result;
-                result = MessageBox.Show("Soll der Switcher wirklich beendet werden?", "FFN Switcher beenden?", MessageBoxButtons.YesNo);
+                if (Counter > 255)
+                {
+                    Counter = 0;
+                    this.StatusListBox.Items.Clear();
+                }
 
-                if (result == DialogResult.No)
-                    e.Cancel=true;
+                Counter++;
+
+                this.StatusListBox.Items.Add(value);
+                this.StatusListBox.SelectedIndex = this.StatusListBox.Items.Count - 1;
             }
-
         }
-
+        #endregion
     }
 }
