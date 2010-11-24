@@ -77,16 +77,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HTTP\HTTPProcessor.cs" />
-    <Compile Include="HTTP\HTTPServer.cs" />
-    <Compile Include="HTTP\TemplateProcessor.cs" />
+    <Compile Include="Helpers\HTTP\HTTPProcessor.cs" />
+    <Compile Include="Helpers\HTTP\HTTPServer.cs" />
+    <Compile Include="Helpers\HTTP\TemplateProcessor.cs" />
     <Compile Include="Informationen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Informationen.Designer.cs">
       <DependentUpon>Informationen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logging\ConsoleOutputLogger.cs" />
+    <Compile Include="Helpers\Logging\ConsoleOutputLogger.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,37 +115,37 @@
     <EmbeddedResource Include="SaveSettings.resx">
       <DependentUpon>SaveSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step10.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step10.resx">
       <DependentUpon>SetupWizard_Step10.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step9.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step9.resx">
       <DependentUpon>SetupWizard_Step9.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step8.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step8.resx">
       <DependentUpon>SetupWizard_Step8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step7.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step7.resx">
       <DependentUpon>SetupWizard_Step7.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step6.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step6.resx">
       <DependentUpon>SetupWizard_Step6.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step5.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step5.resx">
       <DependentUpon>SetupWizard_Step5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step4.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step4.resx">
       <DependentUpon>SetupWizard_Step4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step3.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step3.resx">
       <DependentUpon>SetupWizard_Step3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step2.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step2.resx">
       <DependentUpon>SetupWizard_Step2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SetupWizard\SetupWizard_Step1.resx">
+    <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step1.resx">
       <DependentUpon>SetupWizard_Step1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateWizard\UpdateWizard.resx">
+    <EmbeddedResource Include="Wizards\UpdateWizard\UpdateWizard.resx">
       <DependentUpon>UpdateWizard.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -171,82 +171,82 @@
     <Compile Include="SaveSettings.Designer.cs">
       <DependentUpon>SaveSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Settings\Settings.cs" />
-    <Compile Include="Settings\SettingsProcessor.cs" />
-    <Compile Include="SetupWizard\SetupWizard_Step10.cs">
+    <Compile Include="Helpers\Settings\Settings.cs" />
+    <Compile Include="Helpers\Settings\SettingsProcessor.cs" />
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step10.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step10.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step10.Designer.cs">
       <DependentUpon>SetupWizard_Step10.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step9.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step9.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step9.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step9.Designer.cs">
       <DependentUpon>SetupWizard_Step9.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step8.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step8.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step8.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step8.Designer.cs">
       <DependentUpon>SetupWizard_Step8.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step7.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step7.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step7.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step7.Designer.cs">
       <DependentUpon>SetupWizard_Step7.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step6.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step6.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step6.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step6.Designer.cs">
       <DependentUpon>SetupWizard_Step6.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step5.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step5.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step5.Designer.cs">
       <DependentUpon>SetupWizard_Step5.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step4.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step4.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step4.Designer.cs">
       <DependentUpon>SetupWizard_Step4.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step3.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step3.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step3.Designer.cs">
       <DependentUpon>SetupWizard_Step3.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step2.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step2.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step2.Designer.cs">
       <DependentUpon>SetupWizard_Step2.cs</DependentUpon>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step1.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupWizard\SetupWizard_Step1.Designer.cs">
+    <Compile Include="Wizards\SetupWizard\SetupWizard_Step1.Designer.cs">
       <DependentUpon>SetupWizard_Step1.cs</DependentUpon>
     </Compile>
     <Compile Include="Switcher.cs" />
-    <Compile Include="UpdateWizard\UpdateWizard.cs">
+    <Compile Include="Wizards\UpdateWizard\UpdateWizard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateWizard\UpdateWizard.Designer.cs">
+    <Compile Include="Wizards\UpdateWizard\UpdateWizard.Designer.cs">
       <DependentUpon>UpdateWizard.cs</DependentUpon>
     </Compile>
     <Compile Include="Version.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="knownbugs.txt" />
-    <Content Include="ffn-switcher-logo.bmp" />
-    <Content Include="ffn-switcher-logo.jpg" />
-    <Content Include="ffn-switcher-logo_90.bmp" />
+    <Content Include="Properties\ffn-switcher-logo.bmp" />
+    <Content Include="Properties\ffn-switcher-logo.jpg" />
+    <Content Include="Properties\ffn-switcher-logo_90.bmp" />
     <Content Include="Switcher.ico" />
     <Content Include="TSRemote.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

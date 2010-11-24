@@ -9,15 +9,11 @@ using FFN_Switcher.Settings;
 
 namespace FFN_Switcher
 {
+    /// <summary>
+    /// Das ist die Klasse die die Main Methode enthält und dementsprechend als Einstieg in den Switcher dient.
+    /// </summary>
     static class FFNSwitcher
     {
-        public static void Shutdown()
-        {
-            #region Shutdown
-            ConsoleOutputLogger.WriteLine("[SWITCHER] Herunterfahren...");
-            ConsoleOutputLogger.ShutdownLog();
-            #endregion
-        }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -146,7 +142,8 @@ namespace FFN_Switcher
                 #region Shutdown
                 Switcher.Shutdown();
                 Switcher.done = true;
-                Shutdown();
+                ConsoleOutputLogger.WriteLine("[SWITCHER] Herunterfahren...");
+                ConsoleOutputLogger.ShutdownLog();
                 #endregion
             }
             else
