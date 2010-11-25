@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Freies Funknetz Switcher Tool")]
+[assembly: AssemblyTitle("Freies Funknetz Switcher Tool (NG)")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Daniel Kirstenpfad")]
 [assembly: AssemblyProduct("FFN_Switcher.Properties")]
-[assembly: AssemblyCopyright("(C) Daniel Kirstenpfad 2008")]
+[assembly: AssemblyCopyright("(C) Daniel Kirstenpfad 2008-2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.85")]
-[assembly: AssemblyFileVersion("1.0.0.85")]
+[assembly: AssemblyVersion("1.0.0.113")]
+[assembly: AssemblyFileVersion("1.0.0.113")]

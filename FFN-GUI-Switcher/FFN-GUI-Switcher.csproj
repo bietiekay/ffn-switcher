@@ -80,31 +80,31 @@
     <Compile Include="Helpers\HTTP\HTTPProcessor.cs" />
     <Compile Include="Helpers\HTTP\HTTPServer.cs" />
     <Compile Include="Helpers\HTTP\TemplateProcessor.cs" />
-    <Compile Include="Informationen.cs">
+    <Compile Include="Dialoge und Fenster\Informationen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Informationen.Designer.cs">
+    <Compile Include="Dialoge und Fenster\Informationen.Designer.cs">
       <DependentUpon>Informationen.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Logging\ConsoleOutputLogger.cs" />
-    <Compile Include="MainWindow.cs">
+    <Compile Include="Dialoge und Fenster\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainWindow.Designer.cs">
+    <Compile Include="Dialoge und Fenster\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="FFN-Switcher.cs" />
-    <Compile Include="Processors\BeaconProcessor.cs" />
-    <Compile Include="Processors\ClientFlags.cs" />
-    <Compile Include="Processors\ChannelFlags.cs" />
-    <Compile Include="Processors\SerialportProcessor.cs" />
-    <Compile Include="Processors\TeamspeakProcessor.cs" />
-    <Compile Include="Processors\TSRemote.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Helpers\BeaconProcessor.cs" />
+    <Compile Include="Helpers\ClientFlags.cs" />
+    <Compile Include="Helpers\ChannelFlags.cs" />
+    <Compile Include="Helpers\SerialportProcessor.cs" />
+    <Compile Include="Teamspeak\SwitcherTeamspeakThread.cs" />
+    <Compile Include="Helpers\TSRemote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Informationen.resx">
+    <EmbeddedResource Include="Dialoge und Fenster\Informationen.resx">
       <DependentUpon>Informationen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainWindow.resx">
+    <EmbeddedResource Include="Dialoge und Fenster\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -112,7 +112,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SaveSettings.resx">
+    <EmbeddedResource Include="Dialoge und Fenster\SaveSettings.resx">
       <DependentUpon>SaveSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\SetupWizard\SetupWizard_Step10.resx">
@@ -154,8 +154,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="Properties\DataSources\FFN_Switcher.Properties.Settings.datasource" />
-    <None Include="Properties\DataSources\Version.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -165,14 +163,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SaveSettings.cs">
+    <Compile Include="Dialoge und Fenster\SaveSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SaveSettings.Designer.cs">
+    <Compile Include="Dialoge und Fenster\SaveSettings.Designer.cs">
       <DependentUpon>SaveSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Settings\Settings.cs" />
     <Compile Include="Helpers\Settings\SettingsProcessor.cs" />
+    <Compile Include="Helpers\TeamspeakHelperMethods.cs" />
     <Compile Include="Wizards\SetupWizard\SetupWizard_Step10.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,17 +232,16 @@
     <Compile Include="Wizards\SetupWizard\SetupWizard_Step1.Designer.cs">
       <DependentUpon>SetupWizard_Step1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Switcher.cs" />
+    <Compile Include="SwitcherThread.cs" />
     <Compile Include="Wizards\UpdateWizard\UpdateWizard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Wizards\UpdateWizard\UpdateWizard.Designer.cs">
       <DependentUpon>UpdateWizard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Version.cs" />
+    <Compile Include="VersionInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="knownbugs.txt" />
     <Content Include="Properties\ffn-switcher-logo.bmp" />
     <Content Include="Properties\ffn-switcher-logo.jpg" />
     <Content Include="Properties\ffn-switcher-logo_90.bmp" />
