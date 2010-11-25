@@ -92,9 +92,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(324, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 13);
+            this.label2.Size = new System.Drawing.Size(163, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "(C) 2008 Daniel Kirstenpfad";
+            this.label2.Text = "(C) 2008-2010 Daniel Kirstenpfad";
             // 
             // label1
             // 
@@ -109,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 345);
+            this.ClientSize = new System.Drawing.Size(541, 343);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
