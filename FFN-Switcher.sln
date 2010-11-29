@@ -6,7 +6,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokumentation", "Dokumentation", "{FD5BACD3-4326-436B-BFC8-E4C4C0BAA9B0}"
 	ProjectSection(SolutionItems) = preProject
 		changelog.txt = changelog.txt
-		FFN-Switcher-Abläufe.txt = FFN-Switcher-Abläufe.txt
+		FFN-Switcher-Ablaeufe.txt = FFN-Switcher-Ablaeufe.txt
 		readme = readme
 	EndProjectSection
 EndProject
