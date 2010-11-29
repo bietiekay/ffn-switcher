@@ -95,7 +95,7 @@ namespace FFN_Switcher.Processors
         public void TeamSpeakProcessorThread()
         {
             ConsoleOutputLogger.WriteLine("[TS] Gestartet.");
-
+                
             if (FFN_Switcher.Properties.Settings.Default.StartTeamspeakClientAtStartup)
             {
                 RestartTeamspeak();
@@ -170,7 +170,7 @@ namespace FFN_Switcher.Processors
 
                 _PauseDisplayed = false;
                 
-                while ( (!TeamspeakHelperMethods.TeamspeakClientRunning() && (!done)))
+                while ( (!TeamspeakHelperMethods.TeamspeakClientRunning() && (!done)) )
                 {
                     if (!_PauseDisplayed)
                     {
@@ -546,7 +546,6 @@ namespace FFN_Switcher.Processors
                         {
                             if (IamSpeaking)
                             {
-
                                 if (!ChannelCOmmanderShouldStayOn)
                                     TeamspeakFlags.ChannelCommander = false;
                                 ConsoleOutputLogger.WriteLine("[TS] Gateway spricht nichtmehr selbst - Durchgangsdauer: " + (DateTime.Now - IamSpeakingStarted).TotalSeconds + " Sekunden");

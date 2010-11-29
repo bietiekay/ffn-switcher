@@ -1,0 +1,71 @@
+Agenda
+======
+
+1. Erklärung Switcher Programmaufbau
+2. Gemeinsame Erarbeitung Abläufe im Switcher
+	2.0. Zielstellung: Status Quo aufschreiben - was soll der Switcher
+		 eigentlich tun und welche Funktionen soll er haben, es geht
+		 primär NICHT um bugfixing und fehlerfinden. Sondern um eine
+		 Bestandsaufnahme und Analyse der Anforderungen.
+	2.1. Konfiguration
+	2.2. Startup
+		1. Prüfen auf Pause oder nicht
+			1.1. wenn Pause dann ausgeben Gateway Offline (wiederholt sich ggf.)
+			1.2. wenn keine Pause dann Gateway Online Bake ausgeben (wiederholt sich ggf.)
+		2. Teamspeak starten (ggf. vorher beenden)
+		3. Wenn man connected ist prüfen ob man im richtigen Kanal ist
+		4. Prüfen ob man voice hat
+			4.1. wenn kein Voice dann Ansage "kein Voice da" (wiederholt sich ggf.)
+			4.2. wenn gateway in einen Raum verschoben wurde der nicht moderiert ist
+				 darf diese Ansage nicht abgespielt werden
+			4.3. egal ob voice da oder nicht wird noch geschaut ob im aktuellen Raum
+				 jemand spricht und entsprechend auch noch Comport aktiviert/deaktiviert
+				 und gesendet
+			4.4. falscher Kanal
+				4.4.1. lügt teamspeak?
+				4.4.2. sind wir noch connected?
+					4.4.2.1. ja
+						4.4.2.1.1. sitzen bleiben wo er ist, baken wie gehabt senden, keine deaktiviert ansage
+						4.4.2.1.2. ganz normal senden und empfangen (auch comport)
+					4.4.2.2. nein
+						4.4.2.2.1. Teamspeak Restart, Reconnect, neu in Raum wechseln
+			4.5. richtiger Kanel
+				4.5.1. sind wir wieder im richtigen Kanal?
+				4.5.2. Whisper Flag setzen / oder nicht
+				4.5.3. Channel Commander Flag setzen / oder nicht
+				4.5.4. Teamspeak Nachrichten abrufen und loggen
+					4.5.4.1. Aktionen um Switcher fernzusteuern
+						4.5.4.2.1. Raum wechseln
+						4.5.4.2.2. Reconnect
+						4.5.4.2.3. Mikrofon muten
+				4.5.5. wer spricht gerade
+					4.5.5.1. andere sprechen
+					4.5.5.2. switcher spricht
+						4.5.5.3. wenn im gateway raum andere sprechen zuckt das gateway nicht zurück
+								 bzw. bevorzugt Sprecher im Gateway Raum
+						4.5.5.4. nach Ablauf der Maximalsprechzeit ist anzunehmen dass ein Fehler vorliegt
+								 und dementsprechend ist ein kompletter Reconnect zu machen
+				4.5.6. niemand spricht mehr
+					4.5.6.1. Rogerbeep erst senden wenn Mindestdurchgangsdauer erreicht ist
+					4.5.6.2. nach Durchgang (Comport geschaltet) soll der Switcher in Teamspeak kurz 
+							 das MuteFlag vergeben...Einstellbare Zeit
+		5. Bake abspielen
+			5.1. Einstellbar: Bake kommt nach einstellbarer Zeit IMMER
+			5.2. Bake soll verschoben werden wenn über die Antenne jemand spricht (Gateway spricht selbst)
+			5.3. falls jemand anderes nach der Bake (noch) spricht dann nicht den comport abschalten sondern
+				 weitersenden um den ggf. unterbrochenen Durchgang weiterzuführen
+		
+	2.3. Betrieb
+		2.3.1. Fehlerfreier Durchlauf
+		2.3.2. Fehlerfall Disconnect
+		2.3.3. Fehlerfall in einen Raum verschoben
+		2.3.4. weitere Fehlerfälle
+		2.3.5. Interaktive Änderungen an der Konfiguration
+	2.4. Update Switcher
+3. Fehleranalyse am "lebenden System"
+
+UI Änderungen:
+	- weiteres Tab für Fernsteuerung
+	- RTS/DTR Umschaltung keine Checkbox mehr sondern Auswahldialog
+	- Server Verbindung 2 herausnehmen
+	- 

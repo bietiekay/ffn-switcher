@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GUI", "GUI", "{71366923-9290-499A-9D48-F4AF8011FC2D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Changelog", "Changelog", "{FD5BACD3-4326-436B-BFC8-E4C4C0BAA9B0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokumentation", "Dokumentation", "{FD5BACD3-4326-436B-BFC8-E4C4C0BAA9B0}"
 	ProjectSection(SolutionItems) = preProject
 		changelog.txt = changelog.txt
+		FFN-Switcher-Abläufe.txt = FFN-Switcher-Abläufe.txt
+		readme = readme
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFN-GUI-Switcher", "FFN-GUI-Switcher\FFN-GUI-Switcher.csproj", "{7B1DA8AE-1343-4B16-AED5-657AC98DA989}"
